@@ -1,1 +1,1 @@
-changes 1
+-Added the GUI, can now add stats dynamically instead of hard-coding

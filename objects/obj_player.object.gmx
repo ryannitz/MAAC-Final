@@ -77,7 +77,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>50</string>
+            <string>75</string>
           </argument>
         </arguments>
       </action>
@@ -219,31 +219,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>5</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>player_hunger</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-5</string>
+            <string>+5</string>
           </argument>
         </arguments>
       </action>
@@ -288,6 +264,30 @@
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>player_hunger</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-5</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="5" enumb="40">
@@ -534,6 +534,122 @@
           <argument>
             <kind>0</kind>
             <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var gui_leftOffset = 30;
+var gui_topOffset = 10;
+var gui_containerOutline = 1;
+var gui_containerHeight = 15;
+var gui_containerWidth = 200;
+
+
+//container structure:
+//x1, y1, x2 , y2 , outline t/f
+
+
+//new color formula
+
+
+
+//Player health gui container filling
+
+//draw_sprite(spr_statContainer, 0, gui_leftOffset, gui_topOffset);
+
+
+if(player_health &gt; 75){
+    draw_set_colour(c_green);
+}else if(player_health &gt; 50){
+    draw_set_color(c_yellow);
+}else if(player_health &gt; 25){
+    draw_set_color(c_orange);
+}else if(player_health &gt;= 0){
+    draw_set_color(c_red);
+}
+
+var c = 1
+var x1 = gui_leftOffset + gui_containerOutline; 
+var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
+var x2 = x1 + (player_health * 2);
+var y2 = y1 + gui_containerHeight;
+draw_rectangle(x1, y1, x2, y2, false);
+//outline
+draw_set_color(c_black);
+for(var i = 1; i &lt;= gui_containerOutline; i++){
+    draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
+}
+
+//Player hunger gui container filling
+draw_set_color(c_black);
+
+if(player_hunger &gt; 75){
+    draw_set_colour(c_green);
+}else if(player_hunger &gt; 50){
+    draw_set_color(c_yellow);
+}else if(player_hunger &gt; 25){
+    draw_set_color(c_orange);
+}else if(player_hunger &gt;= 0){
+    draw_set_color(c_red);
+}
+
+var c = 2
+var x1 = gui_leftOffset + gui_containerOutline; 
+var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
+var x2 = x1 + (player_hunger * 2);
+var y2 = y1 + gui_containerHeight;
+draw_rectangle(x1, y1, x2, y2, false);
+//outline
+draw_set_color(c_black);
+for(var i = 1; i &lt;= gui_containerOutline; i++){
+    draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
+}
+
+
+//Maryjuana container
+draw_set_color(c_black);
+
+if(player_hunger &gt; 75){
+    draw_set_colour(c_green);
+}else if(player_hunger &gt; 50){
+    draw_set_color(c_yellow);
+}else if(player_hunger &gt; 25){
+    draw_set_color(c_orange);
+}else if(player_hunger &gt;= 0){
+    draw_set_color(c_red);
+}
+
+var c = 3
+var x1 = gui_leftOffset + gui_containerOutline; 
+var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
+var x2 = x1 + (player_hunger * 2);
+var y2 = y1 + gui_containerHeight;
+draw_rectangle(x1, y1, x2, y2, false);
+//outline
+draw_set_color(c_black);
+for(var i = 1; i &lt;= gui_containerOutline; i++){
+    draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
+}
+
+
+</string>
           </argument>
         </arguments>
       </action>

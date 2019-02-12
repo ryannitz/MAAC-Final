@@ -30,10 +30,12 @@
     <sprite>sprites\spr_main_lotPark</sprite>
     <sprite>sprites\spr_main_lotPlayerHouse</sprite>
     <sprite>sprites\spr_drug_maryJ</sprite>
+    <sprite>sprites\spr_statContainer</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
+    <object>objects\obj_playerStats</object>
     <object>objects\obj_main_TopWall</object>
     <object>objects\obj_player</object>
     <object>objects\obj_main_roadHor</object>
