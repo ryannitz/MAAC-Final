@@ -423,7 +423,7 @@
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>-1</sprite>
+            <sprite>spr_playerFB</sprite>
           </argument>
           <argument>
             <kind>0</kind>
