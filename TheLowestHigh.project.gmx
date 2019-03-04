@@ -6,31 +6,40 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_playerFF</sprite>
-    <sprite>sprites\spr_playerFB</sprite>
-    <sprite>sprites\spr_playerFR</sprite>
-    <sprite>sprites\spr_playerFL</sprite>
     <sprite>sprites\spr_main_TopWall</sprite>
     <sprite>sprites\spr_main_grass</sprite>
-    <sprite>sprites\spr_main_roadHor</sprite>
-    <sprite>sprites\spr_main_roadVer_</sprite>
-    <sprite>sprites\spr_main_sidewalkRight</sprite>
-    <sprite>sprites\spr_main_sidewalkLeft</sprite>
-    <sprite>sprites\spr_main_sidewalkTop</sprite>
-    <sprite>sprites\spr_main_sidewalkBottom</sprite>
-    <sprite>sprites\spr_main_sidewalkInner</sprite>
-    <sprite>sprites\spr_main_sidewalkTL</sprite>
-    <sprite>sprites\spr_main_sidewalkBL</sprite>
-    <sprite>sprites\spr_main_sidewalkTR</sprite>
-    <sprite>sprites\spr_main_sidewalkBR</sprite>
-    <sprite>sprites\spr_main_roadTL</sprite>
-    <sprite>sprites\spr_main_roadBL</sprite>
-    <sprite>sprites\spr_main_roadTR</sprite>
-    <sprite>sprites\spr_main_roadBR</sprite>
-    <sprite>sprites\spr_main_lotPark</sprite>
-    <sprite>sprites\spr_main_lotPlayerHouse</sprite>
-    <sprite>sprites\spr_drug_maryJ</sprite>
     <sprite>sprites\spr_statContainer</sprite>
+    <sprites name="player">
+      <sprite>sprites\spr_playerFB</sprite>
+      <sprite>sprites\spr_playerFF</sprite>
+      <sprite>sprites\spr_playerFL</sprite>
+      <sprite>sprites\spr_playerFR</sprite>
+    </sprites>
+    <sprites name="drugs">
+      <sprite>sprites\spr_drug_maryJ</sprite>
+    </sprites>
+    <sprites name="roads">
+      <sprite>sprites\spr_main_sidewalkTR</sprite>
+      <sprite>sprites\spr_main_sidewalkBL</sprite>
+      <sprite>sprites\spr_main_sidewalkTL</sprite>
+      <sprite>sprites\spr_main_sidewalkRight</sprite>
+      <sprite>sprites\spr_main_sidewalkTop</sprite>
+      <sprite>sprites\spr_main_sidewalkBR</sprite>
+      <sprite>sprites\spr_main_roadBL</sprite>
+      <sprite>sprites\spr_main_roadTL</sprite>
+      <sprite>sprites\spr_main_roadTR</sprite>
+      <sprite>sprites\spr_main_roadBR</sprite>
+      <sprite>sprites\spr_main_sidewalkInner</sprite>
+      <sprite>sprites\spr_main_roadHor</sprite>
+      <sprite>sprites\spr_main_roadVer_</sprite>
+      <sprite>sprites\spr_main_sidewalkBottom</sprite>
+      <sprite>sprites\spr_main_sidewalkLeft</sprite>
+    </sprites>
+    <sprites name="Buildings">
+      <sprite>sprites\spr_main_lotPark</sprite>
+      <sprite>sprites\spr_main_lotPlayerHouse</sprite>
+      <sprite>sprites\spr_policeStation</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

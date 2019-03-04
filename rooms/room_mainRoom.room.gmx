@@ -494,6 +494,7 @@
     <instance objName="obj_drug_maryJ" x="1216" y="768" name="inst_B8AFB2C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_drug_maryJ" x="1216" y="864" name="inst_B98B6121" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_playerStats" x="0" y="0" name="inst_88D7612A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="1280" y="864" name="inst_7D9AF905" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
