@@ -39,32 +39,42 @@
       <sprite>sprites\spr_main_lotPark</sprite>
       <sprite>sprites\spr_main_lotPlayerHouse</sprite>
       <sprite>sprites\spr_policeStation</sprite>
+      <sprite>sprites\spr_hospital</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_playerStats</object>
     <object>objects\obj_main_TopWall</object>
     <object>objects\obj_player</object>
-    <object>objects\obj_main_roadHor</object>
-    <object>objects\obj_main_roadVer</object>
-    <object>objects\obj_main_sidewalkRight</object>
-    <object>objects\obj_main_sidewalkTop</object>
-    <object>objects\obj_main_sidewalkBottom</object>
-    <object>objects\obj_main_sidewalkLeft</object>
-    <object>objects\obj_main_sidewalkInner</object>
-    <object>objects\obj_main_sidewalkTL</object>
-    <object>objects\obj_main_sidewalkBL</object>
-    <object>objects\obj_main_sidewalkTR</object>
-    <object>objects\obj_main_sidewalkBR</object>
-    <object>objects\obj_main_roadTL</object>
-    <object>objects\obj_main_roadBL</object>
-    <object>objects\obj_main_roadTR</object>
-    <object>objects\obj_main_roadBR</object>
-    <object>objects\obj_main_lotPark</object>
-    <object>objects\obj_main_lotPlayerHouse</object>
     <object>objects\obj_drug_maryJ</object>
+    <objects name="road">
+      <object>objects\obj_main_sidewalkInner</object>
+      <object>objects\obj_main_sidewalkLeft</object>
+      <object>objects\obj_main_sidewalkRight</object>
+      <object>objects\obj_main_sidewalkTop</object>
+      <object>objects\obj_main_sidewalkBottom</object>
+      <object>objects\obj_main_sidewalkBL</object>
+      <object>objects\obj_main_sidewalkBR</object>
+      <object>objects\obj_main_sidewalkTR</object>
+      <object>objects\obj_main_sidewalkTL</object>
+      <object>objects\obj_main_roadTL</object>
+      <object>objects\obj_main_roadBL</object>
+      <object>objects\obj_main_roadTR</object>
+      <object>objects\obj_main_roadBR</object>
+      <object>objects\obj_main_roadHor</object>
+      <object>objects\obj_main_roadVer</object>
+    </objects>
+    <objects name="buildings">
+      <object>objects\obj_main_lotPark</object>
+      <object>objects\obj_main_lotPlayerHouse</object>
+      <object>objects\obj_policeStation</object>
+      <object>objects\obj_hospital</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_mainRoom</room>
