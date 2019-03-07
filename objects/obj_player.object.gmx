@@ -156,13 +156,15 @@
         image_index = 1;
     }
     sprite_index = spr_playerFL;
+    
 }else if(keyboard_check(vk_right) || keyboard_check(ord('D'))){
-    image_speed = 1;
+    image_speed = 1/2;
     //image_speed = (player_speed/room_speed);
     if(image_index == 0){
         image_index = 1/2;
     }
     sprite_index = spr_playerFR;
+    
 }else if(keyboard_check(vk_up) || keyboard_check(ord('W'))){
     image_speed = 1/2;
     //image_speed = (player_speed/room_speed);
@@ -170,6 +172,7 @@
         image_index = 1;
     }
     sprite_index = spr_playerFF;
+    
 }else if(keyboard_check(vk_down) || keyboard_check(ord('S'))){
     image_speed = 1/2;
     //image_speed = (player_speed/room_speed);
@@ -177,6 +180,7 @@
         image_index = 1;
     }
     sprite_index = spr_playerFB;
+    
 }else if(keyboard_check(vk_nokey)){
     //will stop the animation and set to the idle sub-image. 
     image_speed = 0;
@@ -317,138 +321,39 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="40">
+    <event eventtype="5" enumb="1">
       <action>
         <libid>1</libid>
-        <id>120</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_linear_step</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
+        <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>player_speed</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>50</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="39">
-      <action>
-        <libid>1</libid>
-        <id>120</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_linear_step</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>player_speed</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>50</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="38">
-      <action>
-        <libid>1</libid>
-        <id>120</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_linear_step</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-player_speed</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>50</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="5" enumb="37">
-      <action>
-        <libid>1</libid>
-        <id>120</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_linear_step</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>-player_speed</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>50</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>if(keyboard_check(ord('W')) || keyboard_check(vk_up)){
+    mp_linear_step(x, y-player_speed, 5, false);   
+}
+
+if(keyboard_check(ord('S')) || keyboard_check(vk_down)){
+    mp_linear_step(x, y+player_speed, 5, false);   
+}
+
+if(keyboard_check(ord('A')) || keyboard_check(vk_left)){
+    mp_linear_step(x-player_speed, y, 5, false); 
+}
+
+if(keyboard_check(ord('D')) || keyboard_check(vk_right)){
+    mp_linear_step(x+player_speed, y, 5, false);   
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -565,6 +470,59 @@ for(var i = 1; i &lt;= gui_containerOutline; i++){
 
 
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="13">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if collision_circle(x, y, 300, obj_policeStation, false, false){
+    object_set_sprite(0, spr_drug_maryJ);
+}else{
+    object_set_sprite(0, spr_main_sidewalkInner);
+} 
+
+player_speed = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>player_speed</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
