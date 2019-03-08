@@ -484,17 +484,7 @@
     <instance objName="obj_main_lotPark" x="1280" y="320" name="inst_52B443BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_lotPlayerHouse" x="1344" y="800" name="inst_8A1D38D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="1312" y="896" name="inst_0E077310" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_drug_maryJ" x="1248" y="896" name="inst_1604C55A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_drug_maryJ" x="1248" y="832" name="inst_2A00A870" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_drug_maryJ" x="1344" y="736" name="inst_C7FDE68D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_drug_maryJ" x="1440" y="736" name="inst_95F9B09F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_drug_maryJ" x="1277" y="764" name="inst_E93358CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_drug_maryJ" x="1280" y="832" name="inst_158C6C1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_drug_maryJ" x="1312" y="768" name="inst_6375D7D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_drug_maryJ" x="1216" y="768" name="inst_B8AFB2C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_drug_maryJ" x="1216" y="864" name="inst_B98B6121" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_playerStats" x="0" y="0" name="inst_88D7612A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_policeStation" x="768" y="416" name="inst_6E0FB3C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_sidewalkInner" x="768" y="384" name="inst_AD69C402" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_sidewalkInner" x="768" y="352" name="inst_06CFA094" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_sidewalkInner" x="768" y="320" name="inst_7601F028" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -570,6 +560,37 @@
     <instance objName="obj_main_sidewalkInner" x="384" y="896" name="inst_8D7459F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_sidewalkInner" x="320" y="864" name="inst_8FEAF23E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_hospital" x="576" y="704" name="inst_262EBDEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policeStationTop" x="768" y="416" name="inst_5EE5097B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policeStationBot" x="768" y="448" name="inst_8D1AA956" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_heroin" x="1088" y="896" name="inst_060109B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_heroin" x="1056" y="896" name="inst_1070835E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_heroin" x="1024" y="896" name="inst_C6F1B4A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_heroin" x="992" y="896" name="inst_2D462956" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_heroin" x="960" y="896" name="inst_CB60F0ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_heroin" x="928" y="896" name="inst_7D05E3EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_heroin" x="896" y="896" name="inst_CD652971" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_acid" x="1088" y="864" name="inst_A5C4E567" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_acid" x="1056" y="864" name="inst_FD4F0714" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_acid" x="1024" y="864" name="inst_FFA5BFAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_acid" x="992" y="864" name="inst_46318DBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_acid" x="960" y="864" name="inst_D0468616" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_acid" x="928" y="864" name="inst_E3DDF66B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_acid" x="896" y="864" name="inst_BADB39EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_maryJ" x="1088" y="832" name="inst_3A68CB16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_maryJ" x="1024" y="832" name="inst_70507AB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_maryJ" x="992" y="832" name="inst_4EE437FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_maryJ" x="928" y="832" name="inst_DACB7A01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_maryJ" x="1024" y="832" name="inst_E65EE49A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_maryJ" x="960" y="832" name="inst_F18F42D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_maryJ" x="1024" y="832" name="inst_78C73568" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_maryJ" x="1056" y="832" name="inst_16592AE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_cocaine" x="1088" y="768" name="inst_88C82659" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_cocaine" x="1056" y="768" name="inst_BCCFB753" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_cocaine" x="1024" y="768" name="inst_E90AE3B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_cocaine" x="992" y="768" name="inst_FE8A7867" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_cocaine" x="960" y="768" name="inst_7AE17C0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_cocaine" x="928" y="768" name="inst_5B7C2A1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_cocaine" x="896" y="768" name="inst_72802AAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -17,6 +17,9 @@
     </sprites>
     <sprites name="drugs">
       <sprite>sprites\spr_drug_maryJ</sprite>
+      <sprite>sprites\spr_drug_cocaine</sprite>
+      <sprite>sprites\spr_drug_heroin</sprite>
+      <sprite>sprites\spr_drug_acid</sprite>
     </sprites>
     <sprites name="roads">
       <sprite>sprites\spr_main_sidewalkTR</sprite>
@@ -38,8 +41,9 @@
     <sprites name="Buildings">
       <sprite>sprites\spr_main_lotPark</sprite>
       <sprite>sprites\spr_main_lotPlayerHouse</sprite>
-      <sprite>sprites\spr_policeStation</sprite>
+      <sprite>sprites\spr_policeStationSPLIT</sprite>
       <sprite>sprites\spr_hospital</sprite>
+      <sprite>sprites\spr_policeStation</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -51,7 +55,6 @@
     <object>objects\obj_playerStats</object>
     <object>objects\obj_main_TopWall</object>
     <object>objects\obj_player</object>
-    <object>objects\obj_drug_maryJ</object>
     <objects name="road">
       <object>objects\obj_main_sidewalkInner</object>
       <object>objects\obj_main_sidewalkLeft</object>
@@ -72,8 +75,16 @@
     <objects name="buildings">
       <object>objects\obj_main_lotPark</object>
       <object>objects\obj_main_lotPlayerHouse</object>
+      <object>objects\obj_policeStationBot</object>
+      <object>objects\obj_policeStationTop</object>
       <object>objects\obj_policeStation</object>
       <object>objects\obj_hospital</object>
+    </objects>
+    <objects name="drugs">
+      <object>objects\obj_drug_maryJ</object>
+      <object>objects\obj_drug_cocaine</object>
+      <object>objects\obj_drug_heroin</object>
+      <object>objects\obj_drug_acid</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>5</kind>
-            <sprite>spr_hospital</sprite>
+            <sprite>spr_policeStationSPLIT</sprite>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>1</string>
           </argument>
           <argument>
             <kind>0</kind>

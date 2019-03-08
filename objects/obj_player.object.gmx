@@ -190,6 +190,62 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//proximity checks on buildings
+
+//player collision mask for buildings:
+x1 = x-25;
+y1 = y;
+x2 = x+50;
+y2 = y+50;
+colide = false;
+
+//police station
+
+obj = obj_policeStationBot;
+if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
+    //highlight the building 
+    obj_policeStationTop.image_index = 2
+    obj_policeStationTop.sprite_index = spr_policeStationSPLIT;
+    obj.image_index = 3;
+    obj.sprite_index = spr_policeStationSPLIT;
+    
+}else{
+    obj_policeStationTop.image_index = 0
+    obj_policeStationTop.sprite_index = spr_policeStationSPLIT;
+    obj.image_index = 1;
+    obj.sprite_index = spr_policeStationSPLIT;
+} 
+
+//hospital
+obj = obj_hospital;
+if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
+    obj.image_index = 1;
+    obj.sprite_index = spr_hospital;
+}else{
+    obj.image_index = 0;
+    obj.sprite_index = spr_hospital;
+} 
+
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obj_drug_maryJ">
       <action>
@@ -474,7 +530,7 @@ for(var i = 1; i &lt;= gui_containerOutline; i++){
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="13">
+    <event eventtype="9" enumb="32">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -491,38 +547,21 @@ for(var i = 1; i &lt;= gui_containerOutline; i++){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if collision_circle(x, y, 300, obj_policeStation, false, false){
-    object_set_sprite(0, spr_drug_maryJ);
-}else{
-    object_set_sprite(0, spr_main_sidewalkInner);
-} 
+            <string>//potential issue: If two selectable buildings are being triggered by the collision 
+//solution: use game maker method to grab distance between objects and highlight the closest one. 
 
-player_speed = 1;
+
+if(collision_rectangle(x-25, y, x+50, y+50, obj_policeStation, false, false)){
+    //check players drug levels and criminal experience. (Street cred)    
+    show_debug_message("pressed on the police station");
+}
+
+if(collision_rectangle(x-25, y, x+50, y+50, obj_hospital, false, false)){
+    //check players drug level and decide whether they get help or thrown out. 
+    show_debug_message("Pressed on the hospital");
+}
+
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>player_speed</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>1</string>
           </argument>
         </arguments>
       </action>
