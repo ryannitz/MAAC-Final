@@ -8,18 +8,18 @@
   <sprites name="sprites">
     <sprite>sprites\spr_main_TopWall</sprite>
     <sprite>sprites\spr_main_grass</sprite>
-    <sprite>sprites\spr_statContainer</sprite>
     <sprites name="player">
       <sprite>sprites\spr_playerFB</sprite>
       <sprite>sprites\spr_playerFF</sprite>
       <sprite>sprites\spr_playerFL</sprite>
       <sprite>sprites\spr_playerFR</sprite>
     </sprites>
-    <sprites name="drugs">
+    <sprites name="pickups">
       <sprite>sprites\spr_drug_maryJ</sprite>
       <sprite>sprites\spr_drug_cocaine</sprite>
       <sprite>sprites\spr_drug_heroin</sprite>
       <sprite>sprites\spr_drug_acid</sprite>
+      <sprite>sprites\spr_food</sprite>
     </sprites>
     <sprites name="roads">
       <sprite>sprites\spr_main_sidewalkTR</sprite>
@@ -44,6 +44,11 @@
       <sprite>sprites\spr_policeStationSPLIT</sprite>
       <sprite>sprites\spr_hospital</sprite>
       <sprite>sprites\spr_policeStation</sprite>
+    </sprites>
+    <sprites name="gui">
+      <sprite>sprites\spr_statContainer</sprite>
+      <sprite>sprites\spr_statHealth</sprite>
+      <sprite>sprites\spr_statHunger</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -80,11 +85,12 @@
       <object>objects\obj_policeStation</object>
       <object>objects\obj_hospital</object>
     </objects>
-    <objects name="drugs">
+    <objects name="pickups">
       <object>objects\obj_drug_maryJ</object>
       <object>objects\obj_drug_cocaine</object>
       <object>objects\obj_drug_heroin</object>
       <object>objects\obj_drug_acid</object>
+      <object>objects\obj_food</object>
     </objects>
   </objects>
   <rooms name="rooms">
