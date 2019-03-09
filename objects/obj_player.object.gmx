@@ -11,6 +11,166 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>This is for hunger decreasing</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>room_speed*5</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>5</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Setting obj variables</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//stats
+player_health = 75.00;
+player_hunger = 75.00;
+hunger_decrease = 1.00;
+
+//movement
+player_speed = 4;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>General Hunger decrease timer</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>room_speed*2</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>5</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>player_hunger -= hunger_decrease;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
         <id>611</id>
         <kind>6</kind>
         <userelative>-1</userelative>
@@ -33,6 +193,8 @@
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="2" enumb="3">
       <action>
         <libid>1</libid>
         <id>611</id>
@@ -49,11 +211,59 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_dir</string>
+            <string>player_speed</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>1</string>
+            <string>4</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>player_speed</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>4</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Cocaine timer</string>
           </argument>
         </arguments>
       </action>
@@ -73,11 +283,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_health</string>
+            <string>hunger_decrease</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>75</string>
+            <string>1.00</string>
           </argument>
         </arguments>
       </action>
@@ -97,16 +307,36 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_hunger</string>
+            <string>player_speed</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>50</string>
+            <string>4</string>
           </argument>
         </arguments>
       </action>
     </event>
     <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>MaryJ timer</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>611</id>
@@ -133,6 +363,26 @@
       </action>
     </event>
     <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Player movement</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -187,6 +437,26 @@
     image_index = 0;
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>collision checking for buildings</string>
           </argument>
         </arguments>
       </action>
@@ -247,7 +517,7 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_drug_maryJ">
+    <event eventtype="4" ename="obj_food">
       <action>
         <libid>1</libid>
         <id>301</id>
@@ -268,7 +538,7 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
           </argument>
           <argument>
             <kind>4</kind>
-            <string>0</string>
+            <string>4</string>
           </argument>
         </arguments>
       </action>
@@ -377,6 +647,448 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_drug_acid">
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>90</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>3</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>player_health</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>100</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>player_health</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>+5</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>player_hunger</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-5</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_drug_heroin">
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>90</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>player_health</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>100</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>player_health</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>+5</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>424</id>
+        <kind>2</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>player_hunger</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-5</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_drug_cocaine">
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>90</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>player_speed</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>8</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hunger_decrease</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>3.00</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_drug_maryJ">
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>90</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>healthDiff = 3; //amount of health affected by the drug
+hungerDiff = 5; //amount of hunger affected by the drug
+
+//will increase player health if it is not already full
+if(player_health &lt; 100 &amp;&amp; player_health != 100){
+    player_health += healthDiff;
+    //will not let the value be greater than 100, if the incrementation is not a factor of 100
+    if(player_health &gt; 100){
+        player_health = 100;
+    }
+}
+
+if(player_hunger &lt; 100 &amp;&amp; player_hunger != 100){
+    player_hunger -= hungerDiff;
+    if(player_hunger &gt; 100){
+        player_hunger = 100;
+    }
+}
+
+if(!(player_speed &lt;= 1)){
+    player_speed -= 1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>405</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_dice</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>10</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Do the laced with cocaine part here</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="5" enumb="1">
       <action>
         <libid>1</libid>
@@ -395,19 +1107,19 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
           <argument>
             <kind>1</kind>
             <string>if(keyboard_check(ord('W')) || keyboard_check(vk_up)){
-    mp_linear_step(x, y-player_speed, 5, false);   
+    mp_linear_step(x, y-player_speed, player_speed, false);   
 }
 
 if(keyboard_check(ord('S')) || keyboard_check(vk_down)){
-    mp_linear_step(x, y+player_speed, 5, false);   
+    mp_linear_step(x, y+player_speed, player_speed, false);   
 }
 
 if(keyboard_check(ord('A')) || keyboard_check(vk_left)){
-    mp_linear_step(x-player_speed, y, 5, false); 
+    mp_linear_step(x-player_speed, y, player_speed, false); 
 }
 
 if(keyboard_check(ord('D')) || keyboard_check(vk_right)){
-    mp_linear_step(x+player_speed, y, 5, false);   
+    mp_linear_step(x+player_speed, y, player_speed, false);   
 }
 </string>
           </argument>
@@ -445,12 +1157,7 @@ var gui_containerWidth = 200;
 //new color formula
 
 
-
-//Player health gui container filling
-
-//draw_sprite(spr_statContainer, 0, gui_leftOffset, gui_topOffset);
-
-
+//HEALTH
 if(player_health &gt; 75){
     draw_set_colour(c_green);
 }else if(player_health &gt; 50){
@@ -473,7 +1180,7 @@ for(var i = 1; i &lt;= gui_containerOutline; i++){
     draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
 }
 
-//Player hunger gui container filling
+//HUNGER
 draw_set_color(c_black);
 
 if(player_hunger &gt; 75){
@@ -499,7 +1206,7 @@ for(var i = 1; i &lt;= gui_containerOutline; i++){
 }
 
 
-//Maryjuana container
+//MARY
 draw_set_color(c_black);
 
 if(player_hunger &gt; 75){
@@ -513,6 +1220,84 @@ if(player_hunger &gt; 75){
 }
 
 var c = 3
+var x1 = gui_leftOffset + gui_containerOutline; 
+var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
+var x2 = x1 + (player_hunger * 2);
+var y2 = y1 + gui_containerHeight;
+draw_rectangle(x1, y1, x2, y2, false);
+//outline
+draw_set_color(c_black);
+for(var i = 1; i &lt;= gui_containerOutline; i++){
+    draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
+}
+
+//COCAINE
+draw_set_color(c_black);
+
+if(player_hunger &gt; 75){
+    draw_set_colour(c_green);
+}else if(player_hunger &gt; 50){
+    draw_set_color(c_yellow);
+}else if(player_hunger &gt; 25){
+    draw_set_color(c_orange);
+}else if(player_hunger &gt;= 0){
+    draw_set_color(c_red);
+}
+
+
+var c = 4
+var x1 = gui_leftOffset + gui_containerOutline; 
+var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
+var x2 = x1 + (player_hunger * 2);
+var y2 = y1 + gui_containerHeight;
+draw_rectangle(x1, y1, x2, y2, false);
+//outline
+draw_set_color(c_black);
+for(var i = 1; i &lt;= gui_containerOutline; i++){
+    draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
+}
+
+//Heroin
+draw_set_color(c_black);
+
+if(player_hunger &gt; 75){
+    draw_set_colour(c_green);
+}else if(player_hunger &gt; 50){
+    draw_set_color(c_yellow);
+}else if(player_hunger &gt; 25){
+    draw_set_color(c_orange);
+}else if(player_hunger &gt;= 0){
+    draw_set_color(c_red);
+}
+
+
+var c = 5
+var x1 = gui_leftOffset + gui_containerOutline; 
+var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
+var x2 = x1 + (player_hunger * 2);
+var y2 = y1 + gui_containerHeight;
+draw_rectangle(x1, y1, x2, y2, false);
+//outline
+draw_set_color(c_black);
+for(var i = 1; i &lt;= gui_containerOutline; i++){
+    draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
+}
+
+//Acid
+draw_set_color(c_black);
+
+if(player_hunger &gt; 75){
+    draw_set_colour(c_green);
+}else if(player_hunger &gt; 50){
+    draw_set_color(c_yellow);
+}else if(player_hunger &gt; 25){
+    draw_set_color(c_orange);
+}else if(player_hunger &gt;= 0){
+    draw_set_color(c_red);
+}
+
+
+var c = 6
 var x1 = gui_leftOffset + gui_containerOutline; 
 var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
 var x2 = x1 + (player_hunger * 2);
