@@ -93,9 +93,30 @@
 player_health = 75.00;
 player_hunger = 75.00;
 hunger_decrease = 1.00;
+street_credit = 0; // you will die anyway by the drug lord
 
 //movement
 player_speed = 4;
+player_dir = 1;
+
+//drugs
+pickup_multiplier = 5;
+
+maryJ_isActive = false;
+maryJ_isShown = true;
+maryJ_level = 0;
+
+cocaine_isActive = false;
+cocaine_isShown = false;
+cocaine_level = 0;
+
+heroin_isActive = false;
+heroin_isShown = false;
+heroin_level = 0;
+
+acid_isActive = false;
+acid_isShown = false;
+acid_level = 0;
 </string>
           </argument>
         </arguments>
@@ -168,64 +189,32 @@ player_speed = 4;
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>player_speed</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>4</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="3">
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>player_speed</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>4</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="2" enumb="2">
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>heroin timer</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
@@ -237,11 +226,28 @@ player_speed = 4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_speed</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>4</string>
+            <string>with(obj_drug_maryJ){
+    sprite_index = spr_drug_maryJ;  
+}
+
+with(obj_drug_cocaine){
+    sprite_index = spr_drug_cocaine;
+}
+
+with(obj_drug_heroin){
+    sprite_index = spr_drug_heroin;
+}
+
+with(obj_drug_acid){
+    sprite_index = spr_drug_acid;
+}
+
+/* opioids
+with(obj_drug_){
+    
+}
+*/
+</string>
           </argument>
         </arguments>
       </action>
@@ -379,7 +385,7 @@ player_speed = 4;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Player movement</string>
+            <string>Player animation</string>
           </argument>
         </arguments>
       </action>
@@ -520,129 +526,27 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
     <event eventtype="4" ename="obj_food">
       <action>
         <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>90</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>4</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>player_health</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>100</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>player_health</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>+5</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_hunger</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-5</string>
+            <string>if(player_hunger &lt; 100 &amp;&amp; player_hunger != 100){
+    player_hunger += pickup_multiplier;
+    if(player_hunger &gt; 100){
+        player_hunger = 100;
+    }
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -650,67 +554,31 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
     <event eventtype="4" ename="obj_drug_acid">
       <action>
         <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>90</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>3</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>612</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>player_health</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>100</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>if(acid_level == 0){
+    acid_level = 50;
+}
+
+if(acid_level &lt; 100 &amp;&amp; acid_level != 100){
+    acid_level += pickup_multiplier;
+    if(acid_level &gt; 100){
+        acid_level = 100;
+    }
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -725,54 +593,16 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
         <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>player_health</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>+5</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_hunger</string>
+            <string>palyer_dir</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-5</string>
+            <string>-player_dir</string>
           </argument>
         </arguments>
       </action>
@@ -804,75 +634,39 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
       </action>
       <action>
         <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(heroin_level == 0){
+    heroin_level = 50;
+}
+
+if(heroin_level &lt; 100 &amp;&amp; heroin_level != 100){
+    heroin_level += pickup_multiplier;
+    if(heroin_level &gt; 100){
+        heroin_level = 100;
+    }
+}
+</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>
-        <id>612</id>
+        <id>605</id>
         <kind>0</kind>
         <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_variable</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>player_health</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>100</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>player_health</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>+5</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>0</useapplyto>
         <exetype>0</exetype>
@@ -881,28 +675,51 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Change all consumable sprites to chicken</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
-        <relative>-1</relative>
+        <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_hunger</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>-5</string>
+            <string>with(obj_drug_maryJ){
+    sprite_index = spr_food;  
+}
+
+with(obj_drug_cocaine){
+    sprite_index = spr_food;
+}
+
+with(obj_drug_heroin){
+    sprite_index = spr_food;
+}
+
+with(obj_drug_acid){
+    sprite_index = spr_food;
+}
+
+/* opioids
+with(obj_drug_){
+    
+}
+*/
+</string>
           </argument>
         </arguments>
       </action>
@@ -980,6 +797,36 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(cocaine_level == 0){
+    cocaine_level = 50;
+}
+
+if(cocaine_level &lt; 100 &amp;&amp; cocaine_level != 100){
+    cocaine_level += pickup_multiplier;
+    if(cocaine_level &gt; 100){
+        cocaine_level = 100;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obj_drug_maryJ">
       <action>
@@ -1022,7 +869,18 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>healthDiff = 3; //amount of health affected by the drug
+            <string>if(maryJ_level == 0){
+    maryJ_level = 50;
+}
+
+if(maryJ_level &lt; 100 &amp;&amp; maryJ_level != 100){
+    maryJ_level += pickup_multiplier;
+    if(maryJ_level &gt; 100){
+        maryJ_level = 100;
+    }
+}
+
+healthDiff = 3; //amount of health affected by the drug
 hungerDiff = 5; //amount of hunger affected by the drug
 
 //will increase player health if it is not already full
@@ -1050,26 +908,6 @@ if(!(player_speed &lt;= 1)){
       </action>
       <action>
         <libid>1</libid>
-        <id>405</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_dice</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>10</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>605</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -1088,8 +926,48 @@ if(!(player_speed &lt;= 1)){
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>405</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_dice</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>10</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="5" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Player movement</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -1107,19 +985,19 @@ if(!(player_speed &lt;= 1)){
           <argument>
             <kind>1</kind>
             <string>if(keyboard_check(ord('W')) || keyboard_check(vk_up)){
-    mp_linear_step(x, y-player_speed, player_speed, false);   
+    mp_linear_step(x, y-player_speed, player_speed * player_dir, false);   
 }
 
 if(keyboard_check(ord('S')) || keyboard_check(vk_down)){
-    mp_linear_step(x, y+player_speed, player_speed, false);   
+    mp_linear_step(x, y+player_speed, player_speed * player_dir, false);   
 }
 
 if(keyboard_check(ord('A')) || keyboard_check(vk_left)){
-    mp_linear_step(x-player_speed, y, player_speed, false); 
+    mp_linear_step(x-player_speed, y, player_speed * player_dir, false); 
 }
 
 if(keyboard_check(ord('D')) || keyboard_check(vk_right)){
-    mp_linear_step(x+player_speed, y, player_speed, false);   
+    mp_linear_step(x+player_speed, y, player_speed * player_dir, false);   
 }
 </string>
           </argument>
@@ -1158,20 +1036,22 @@ var gui_containerWidth = 200;
 
 
 //HEALTH
-if(player_health &gt; 75){
+var level = player_health;
+var c = 1;
+
+if(level &gt; 75){
     draw_set_colour(c_green);
-}else if(player_health &gt; 50){
+}else if(level &gt; 50){
     draw_set_color(c_yellow);
-}else if(player_health &gt; 25){
+}else if(level &gt; 25){
     draw_set_color(c_orange);
-}else if(player_health &gt;= 0){
+}else if(level &gt;= 0){
     draw_set_color(c_red);
 }
 
-var c = 1
 var x1 = gui_leftOffset + gui_containerOutline; 
 var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
-var x2 = x1 + (player_health * 2);
+var x2 = x1 + (level * 2);
 var y2 = y1 + gui_containerHeight;
 draw_rectangle(x1, y1, x2, y2, false);
 //outline
@@ -1181,22 +1061,23 @@ for(var i = 1; i &lt;= gui_containerOutline; i++){
 }
 
 //HUNGER
+level = player_hunger;
+c = 2;
 draw_set_color(c_black);
 
-if(player_hunger &gt; 75){
+if(level &gt; 75){
     draw_set_colour(c_green);
-}else if(player_hunger &gt; 50){
+}else if(level &gt; 50){
     draw_set_color(c_yellow);
-}else if(player_hunger &gt; 25){
+}else if(level &gt; 25){
     draw_set_color(c_orange);
-}else if(player_hunger &gt;= 0){
+}else if(level &gt;= 0){
     draw_set_color(c_red);
 }
 
-var c = 2
 var x1 = gui_leftOffset + gui_containerOutline; 
 var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
-var x2 = x1 + (player_hunger * 2);
+var x2 = x1 + (level * 2);
 var y2 = y1 + gui_containerHeight;
 draw_rectangle(x1, y1, x2, y2, false);
 //outline
@@ -1208,21 +1089,22 @@ for(var i = 1; i &lt;= gui_containerOutline; i++){
 
 //MARY
 draw_set_color(c_black);
+level = maryJ_level;
+c = 3;
 
-if(player_hunger &gt; 75){
+if(level &gt; 75){
     draw_set_colour(c_green);
-}else if(player_hunger &gt; 50){
+}else if(level &gt; 50){
     draw_set_color(c_yellow);
-}else if(player_hunger &gt; 25){
+}else if(level &gt; 25){
     draw_set_color(c_orange);
-}else if(player_hunger &gt;= 0){
+}else if(level &gt;= 0){
     draw_set_color(c_red);
 }
 
-var c = 3
 var x1 = gui_leftOffset + gui_containerOutline; 
 var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
-var x2 = x1 + (player_hunger * 2);
+var x2 = x1 + (level * 2);
 var y2 = y1 + gui_containerHeight;
 draw_rectangle(x1, y1, x2, y2, false);
 //outline
@@ -1233,22 +1115,22 @@ for(var i = 1; i &lt;= gui_containerOutline; i++){
 
 //COCAINE
 draw_set_color(c_black);
+level = cocaine_level;
+c = 4;
 
-if(player_hunger &gt; 75){
+if(level &gt; 75){
     draw_set_colour(c_green);
-}else if(player_hunger &gt; 50){
+}else if(level &gt; 50){
     draw_set_color(c_yellow);
-}else if(player_hunger &gt; 25){
+}else if(level &gt; 25){
     draw_set_color(c_orange);
-}else if(player_hunger &gt;= 0){
+}else if(level &gt;= 0){
     draw_set_color(c_red);
 }
 
-
-var c = 4
 var x1 = gui_leftOffset + gui_containerOutline; 
 var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
-var x2 = x1 + (player_hunger * 2);
+var x2 = x1 + (level * 2);
 var y2 = y1 + gui_containerHeight;
 draw_rectangle(x1, y1, x2, y2, false);
 //outline
@@ -1259,22 +1141,22 @@ for(var i = 1; i &lt;= gui_containerOutline; i++){
 
 //Heroin
 draw_set_color(c_black);
+level = heroin_level;
+c = 5;
 
-if(player_hunger &gt; 75){
+if(level &gt; 75){
     draw_set_colour(c_green);
-}else if(player_hunger &gt; 50){
+}else if(level &gt; 50){
     draw_set_color(c_yellow);
-}else if(player_hunger &gt; 25){
+}else if(level &gt; 25){
     draw_set_color(c_orange);
-}else if(player_hunger &gt;= 0){
+}else if(level &gt;= 0){
     draw_set_color(c_red);
 }
 
-
-var c = 5
 var x1 = gui_leftOffset + gui_containerOutline; 
 var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
-var x2 = x1 + (player_hunger * 2);
+var x2 = x1 + (level * 2);
 var y2 = y1 + gui_containerHeight;
 draw_rectangle(x1, y1, x2, y2, false);
 //outline
@@ -1285,22 +1167,22 @@ for(var i = 1; i &lt;= gui_containerOutline; i++){
 
 //Acid
 draw_set_color(c_black);
+level = acid_level;
+c = 6;
 
-if(player_hunger &gt; 75){
+if(level &gt; 75){
     draw_set_colour(c_green);
-}else if(player_hunger &gt; 50){
+}else if(level &gt; 50){
     draw_set_color(c_yellow);
-}else if(player_hunger &gt; 25){
+}else if(level &gt; 25){
     draw_set_color(c_orange);
-}else if(player_hunger &gt;= 0){
+}else if(level &gt;= 0){
     draw_set_color(c_red);
 }
 
-
-var c = 6
 var x1 = gui_leftOffset + gui_containerOutline; 
 var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
-var x2 = x1 + (player_hunger * 2);
+var x2 = x1 + (level * 2);
 var y2 = y1 + gui_containerHeight;
 draw_rectangle(x1, y1, x2, y2, false);
 //outline
