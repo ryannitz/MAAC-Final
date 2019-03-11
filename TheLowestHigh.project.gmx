@@ -48,7 +48,6 @@
     <sprites name="gui">
       <sprite>sprites\spr_statContainer</sprite>
       <sprite>sprites\spr_statHealth</sprite>
-      <sprite>sprites\spr_statHunger</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>

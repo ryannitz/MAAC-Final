@@ -251,6 +251,54 @@ with(obj_drug_){
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>heroin_isActive</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>false</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>heroin_isShown</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>false</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="2" enumb="1">
       <action>
@@ -321,6 +369,54 @@ with(obj_drug_){
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>cocaine_isActive</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>false</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>cocaine_isShown</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>false</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="2" enumb="0">
       <action>
@@ -364,6 +460,54 @@ with(obj_drug_){
           <argument>
             <kind>0</kind>
             <string>4</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>maryJ_isActive</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>false</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>maryJ_isShown</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>false</string>
           </argument>
         </arguments>
       </action>
@@ -606,6 +750,54 @@ if(acid_level &lt; 100 &amp;&amp; acid_level != 100){
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>acid_isActive</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>acid_isShown</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obj_drug_heroin">
       <action>
@@ -629,6 +821,54 @@ if(acid_level &lt; 100 &amp;&amp; acid_level != 100){
           <argument>
             <kind>4</kind>
             <string>2</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>heroin_isActive</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>heroin_isShown</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
           </argument>
         </arguments>
       </action>
@@ -799,6 +1039,54 @@ with(obj_drug_){
       </action>
       <action>
         <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>cocaine_isActive</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>cocaine_isShown</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -903,6 +1191,54 @@ if(!(player_speed &lt;= 1)){
     player_speed -= 1;
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>maryJ_isActive</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>maryJ_isShown</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
           </argument>
         </arguments>
       </action>
@@ -1031,9 +1367,7 @@ var gui_containerWidth = 200;
 //container structure:
 //x1, y1, x2 , y2 , outline t/f
 
-
 //new color formula
-
 
 //HEALTH
 var level = player_health;
@@ -1054,6 +1388,9 @@ var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutlin
 var x2 = x1 + (level * 2);
 var y2 = y1 + gui_containerHeight;
 draw_rectangle(x1, y1, x2, y2, false);
+
+draw_sprite_ext(spr_statHealth, 0, x1-20, y1, 1/2, 1/2, 0, c_white, 1);
+
 //outline
 draw_set_color(c_black);
 for(var i = 1; i &lt;= gui_containerOutline; i++){
@@ -1080,6 +1417,9 @@ var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutlin
 var x2 = x1 + (level * 2);
 var y2 = y1 + gui_containerHeight;
 draw_rectangle(x1, y1, x2, y2, false);
+
+draw_sprite_ext(spr_food, 0, x1-18, y1, 1/2, 1/2, 0, c_white, 1);
+
 //outline
 draw_set_color(c_black);
 for(var i = 1; i &lt;= gui_containerOutline; i++){
@@ -1090,106 +1430,138 @@ for(var i = 1; i &lt;= gui_containerOutline; i++){
 //MARY
 draw_set_color(c_black);
 level = maryJ_level;
-c = 3;
+if(maryJ_isShown){
+    c++;
+    if(level &gt; 75){
+        draw_set_colour(c_green);
+    }else if(level &gt; 50){
+        draw_set_color(c_yellow);
+    }else if(level &gt; 25){
+        draw_set_color(c_orange);
+    }else if(level &gt;= 0){
+        draw_set_color(c_red);
+    }
 
-if(level &gt; 75){
-    draw_set_colour(c_green);
-}else if(level &gt; 50){
-    draw_set_color(c_yellow);
-}else if(level &gt; 25){
-    draw_set_color(c_orange);
-}else if(level &gt;= 0){
-    draw_set_color(c_red);
-}
-
-var x1 = gui_leftOffset + gui_containerOutline; 
-var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
-var x2 = x1 + (level * 2);
-var y2 = y1 + gui_containerHeight;
-draw_rectangle(x1, y1, x2, y2, false);
-//outline
-draw_set_color(c_black);
-for(var i = 1; i &lt;= gui_containerOutline; i++){
-    draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
+    var x1 = gui_leftOffset + gui_containerOutline; 
+    var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
+    var x2 = x1 + (level * 2);
+    var y2 = y1 + gui_containerHeight;
+    draw_rectangle(x1, y1, x2, y2, false);
+    
+    draw_sprite_ext(spr_drug_maryJ, 0, x1-15, y1+10, 1, 1, 0, c_white, 1);
+    
+    //outline
+    draw_set_color(c_black);    
+    if(maryJ_isActive){
+        draw_set_color(c_yellow);
+    }
+    for(var i = 1; i &lt;= gui_containerOutline; i++){
+        draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
+    }
 }
 
 //COCAINE
 draw_set_color(c_black);
 level = cocaine_level;
-c = 4;
+if(cocaine_isShown){
+    c++;
+    if(level &gt; 75){
+        draw_set_colour(c_green);
+    }else if(level &gt; 50){
+        draw_set_color(c_yellow);
+    }else if(level &gt; 25){
+        draw_set_color(c_orange);
+    }else if(level &gt;= 0){
+        draw_set_color(c_red);
+    }
 
-if(level &gt; 75){
-    draw_set_colour(c_green);
-}else if(level &gt; 50){
-    draw_set_color(c_yellow);
-}else if(level &gt; 25){
-    draw_set_color(c_orange);
-}else if(level &gt;= 0){
-    draw_set_color(c_red);
+    var x1 = gui_leftOffset + gui_containerOutline; 
+    var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
+    var x2 = x1 + (level * 2);
+    var y2 = y1 + gui_containerHeight;
+    draw_rectangle(x1, y1, x2, y2, false);
+    
+    draw_sprite_ext(spr_drug_cocaine, 0, x1-30, y1-10, 1, 1, 0, c_white, 1);
+
+    //outline
+    draw_set_color(c_black);
+    if(cocaine_isActive){
+        draw_set_color(c_yellow);
+    }
+    for(var i = 1; i &lt;= gui_containerOutline; i++){
+        draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
+    }
 }
 
-var x1 = gui_leftOffset + gui_containerOutline; 
-var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
-var x2 = x1 + (level * 2);
-var y2 = y1 + gui_containerHeight;
-draw_rectangle(x1, y1, x2, y2, false);
-//outline
-draw_set_color(c_black);
-for(var i = 1; i &lt;= gui_containerOutline; i++){
-    draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
-}
+
 
 //Heroin
 draw_set_color(c_black);
 level = heroin_level;
-c = 5;
+if(heroin_isShown){
+    c++;
+    if(level &gt; 75){
+        draw_set_colour(c_green);
+    }else if(level &gt; 50){
+        draw_set_color(c_yellow);
+    }else if(level &gt; 25){
+        draw_set_color(c_orange);
+    }else if(level &gt;= 0){
+        draw_set_color(c_red);
+    }
 
-if(level &gt; 75){
-    draw_set_colour(c_green);
-}else if(level &gt; 50){
-    draw_set_color(c_yellow);
-}else if(level &gt; 25){
-    draw_set_color(c_orange);
-}else if(level &gt;= 0){
-    draw_set_color(c_red);
+    var x1 = gui_leftOffset + gui_containerOutline; 
+    var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
+    var x2 = x1 + (level * 2);
+    var y2 = y1 + gui_containerHeight;
+    draw_rectangle(x1, y1, x2, y2, false);
+    
+    draw_sprite_ext(spr_drug_heroin, 0, x1-35, y1-15, 1.5, 1.5, 0, c_white, 1);
+
+    //outline
+    draw_set_color(c_black);
+    if(heroin_isActive){
+        draw_set_color(c_yellow);
+    }
+    for(var i = 1; i &lt;= gui_containerOutline; i++){
+        draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
+    }
 }
 
-var x1 = gui_leftOffset + gui_containerOutline; 
-var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
-var x2 = x1 + (level * 2);
-var y2 = y1 + gui_containerHeight;
-draw_rectangle(x1, y1, x2, y2, false);
-//outline
-draw_set_color(c_black);
-for(var i = 1; i &lt;= gui_containerOutline; i++){
-    draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
-}
 
 //Acid
 draw_set_color(c_black);
 level = acid_level;
-c = 6;
+if(acid_isShown){
+    c++;
+    if(level &gt; 75){
+        draw_set_colour(c_green);
+    }else if(level &gt; 50){
+        draw_set_color(c_yellow);
+    }else if(level &gt; 25){
+       draw_set_color(c_orange);
+    }else if(level &gt;= 0){
+        draw_set_color(c_red);
+    }
 
-if(level &gt; 75){
-    draw_set_colour(c_green);
-}else if(level &gt; 50){
-    draw_set_color(c_yellow);
-}else if(level &gt; 25){
-    draw_set_color(c_orange);
-}else if(level &gt;= 0){
-    draw_set_color(c_red);
+    var x1 = gui_leftOffset + gui_containerOutline; 
+    var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
+    var x2 = x1 + (level * 2);
+    var y2 = y1 + gui_containerHeight;
+    draw_rectangle(x1, y1, x2, y2, false);
+    
+    draw_sprite_ext(spr_drug_acid, 0, x1-30, y1-10, 1, 1, 0, c_white, 1);
+    
+    //outline
+    draw_set_color(c_black);
+    if(acid_isActive){
+        draw_set_color(c_yellow);
+    }
+    for(var i = 1; i &lt;= gui_containerOutline; i++){
+        draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
+    }
 }
 
-var x1 = gui_leftOffset + gui_containerOutline; 
-var y1 = (gui_topOffset * c) + (gui_containerHeight*(c-1)) + gui_containerOutline;
-var x2 = x1 + (level * 2);
-var y2 = y1 + gui_containerHeight;
-draw_rectangle(x1, y1, x2, y2, false);
-//outline
-draw_set_color(c_black);
-for(var i = 1; i &lt;= gui_containerOutline; i++){
-    draw_rectangle(x1-i, y1-i, x1 + gui_containerWidth+i, y2+i, true);
-}
 
 
 </string>
