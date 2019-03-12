@@ -25,6 +25,76 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>Setting obj variables</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//stats
+player_health = 75.00;
+health_decreaser = 0.00; //Will be x/100 and this decrease will happen every frame
+player_hunger = 75.00; //is defined in begin step as well as it launches first
+hunger_decrease = 1.00;
+street_credit = 0; // you will die anyway by the drug lord
+
+//movement
+player_speed = 4;
+player_dir = 1;
+
+//drugs
+pickup_multiplier = 5;
+drug_decreaser = 1.0;
+
+maryJ_isActive = false;
+maryJ_isShown = true;
+maryJ_level = 50;
+
+cocaine_isActive = false;
+cocaine_isShown = false;
+cocaine_level = 50;
+
+heroin_isActive = false;
+heroin_isShown = false;
+heroin_level = 50;
+
+acid_isActive = false;
+acid_isShown = false;
+acid_level = 50;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>This is for hunger decreasing</string>
           </argument>
         </arguments>
@@ -94,75 +164,6 @@
           <argument>
             <kind>4</kind>
             <string>4</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>605</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>Setting obj variables</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//stats
-player_health = 75.00;
-health_decreaser = 0.00; //Will be x/100 and this decrease will happen every frame
-player_hunger = 75.00;
-hunger_decrease = 1.00;
-street_credit = 0; // you will die anyway by the drug lord
-
-//movement
-player_speed = 4;
-player_dir = 1;
-
-//drugs
-pickup_multiplier = 5;
-
-maryJ_isActive = false;
-maryJ_isShown = true;
-maryJ_level = 50;
-
-cocaine_isActive = false;
-cocaine_isShown = false;
-cocaine_level = 50;
-
-heroin_isActive = false;
-heroin_isShown = false;
-heroin_level = 50;
-
-acid_isActive = false;
-acid_isShown = false;
-acid_level = 50;
-</string>
           </argument>
         </arguments>
       </action>
@@ -243,26 +244,6 @@ acid_level = 50;
     <event eventtype="2" enumb="4">
       <action>
         <libid>1</libid>
-        <id>605</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>Alarm for health decreasing</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>301</id>
         <kind>0</kind>
         <userelative>-1</userelative>
@@ -282,6 +263,26 @@ acid_level = 50;
           <argument>
             <kind>4</kind>
             <string>4</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Alarm for health decreasing</string>
           </argument>
         </arguments>
       </action>
@@ -307,6 +308,65 @@ if(player_health &gt; 0){
     player_health -= health_decreaser*3;
 }
 //show_debug_message(health_decreaser);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Alarm for drug decreasing</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//figure out what happens when maryJ gets to zero, because it does not go away. Unless cured I suppose
+
+//find a way to change the decrease rate depending on hunger maybe?
+if(maryJ_isShown == true){
+    maryJ_level -= drug_decreaser;
+}   
+
+if(cocaine_isShown == true){
+    cocaine_level -= drug_decreaser;
+}
+
+if(heroin_isShown == true){
+    heroin_level -= drug_decreaser;
+}
+
+if(acid_isShown == true){
+    acid_level -= drug_decreaser;
+}
+
 </string>
           </argument>
         </arguments>
@@ -563,100 +623,6 @@ with(obj_drug_){
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>605</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>Code that interprets the drug levels</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>health_decreaser = 0;
-
-if(player_hunger &lt; 25){
-    health_decreaser += .5;
-}
-
-//maryJ
-var level = maryJ_level;
-if(level &gt; 90){
-    health_decreaser += .5;
-}else if(level &lt; 20){
-    health_decreaser += .5;
-}
-
-level = cocaine_level;
-if(level &gt;= 100){
-    //death 
-}else if(level &gt; 75){
-    health_decreaser += .5;
-}else if(level &gt; 60){
-    health_decreaser += .2;    
-}else if(level &lt; 30){
-    health_decreaser += .5;
-}
-
-level = heroin_level;
-if(level &gt;= 100){
-    //death 
-}else if(level &gt; 75){
-    health_decreaser += .10;
-}else if(level &gt; 60){
-    health_decreaser += .4;
-}else if(level &lt; 40){
-    health_decreaser += .4;
-}else if(level &lt; 20){
-    health_decreaser += .10;
-}
-
-level = acid_level;
-if(level &gt;= 100){
-    //death 
-}else if(level &gt; 75){
-    health_decreaser += .5;
-}else if(level &gt; 60){
-    health_decreaser += .3;
-}else if(level &lt; 40){
-    health_decreaser += .3;
-}else if(level &lt; 20){
-    health_decreaser += .5;
-}
-
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -827,7 +793,82 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Code that decreases drug addiction</string>
+            <string>hunger/drug checking </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>health_decreaser = 0;
+drug_decreaser = .25;
+
+if(player_hunger &lt; 50){
+    //drug_decreaser = 1.1;
+}else if(player_hunger &lt; 25){
+    health_decreaser += .5;
+    show_debug_message(health_decreaser);
+}
+
+//maryJ
+var level = maryJ_level;
+if(level &gt; 90){
+    health_decreaser += .5;
+}else if(level &lt; 20){
+    health_decreaser += .5;
+}
+
+level = cocaine_level;
+if(level &gt;= 100){
+    //death 
+}else if(level &gt; 75){
+    health_decreaser += .5;
+}else if(level &gt; 60){
+    health_decreaser += .2;    
+}else if(level &lt; 30){
+    health_decreaser += .5;
+}
+
+level = heroin_level;
+if(level &gt;= 100){
+    //death 
+}else if(level &gt; 75){
+    health_decreaser += .10;
+}else if(level &gt; 60){
+    health_decreaser += .4;
+}else if(level &lt; 40){
+    health_decreaser += .4;
+}else if(level &lt; 20){
+    health_decreaser += .10;
+}
+
+level = acid_level;
+if(level &gt;= 100){
+    //death 
+}else if(level &gt; 75){
+    health_decreaser += .5;
+}else if(level &gt; 60){
+    health_decreaser += .3;
+}else if(level &lt; 40){
+    health_decreaser += .3;
+}else if(level &lt; 20){
+    health_decreaser += .5;
+}
+
+</string>
           </argument>
         </arguments>
       </action>
@@ -912,6 +953,30 @@ if(acid_level &lt; 100 &amp;&amp; acid_level != 100){
           <argument>
             <kind>0</kind>
             <string>-player_dir</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>street_credit</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -1034,6 +1099,30 @@ if(acid_level &lt; 100 &amp;&amp; acid_level != 100){
           <argument>
             <kind>0</kind>
             <string>true</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>street_credit</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -1252,6 +1341,30 @@ with(obj_drug_){
       </action>
       <action>
         <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>street_credit</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -1380,6 +1493,30 @@ if(!(player_speed &lt;= 1)){
           <argument>
             <kind>0</kind>
             <string>true</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>street_credit</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -1735,16 +1872,91 @@ if(acid_isShown){
             <kind>1</kind>
             <string>//potential issue: If two selectable buildings are being triggered by the collision 
 //solution: use game maker method to grab distance between objects and highlight the closest one. 
+level[0] = maryJ_level;
+level[1] = cocaine_level;
+level[2] = heroin_level;
+level[3] = acid_level;
 
+active[0] = maryJ_isActive;
+active[1] = cocaine_isActive;
+active[2] = heroin_isActive;
+active[3] = acid_isActive;
+
+showing[0] = maryJ_isShown;
+showing[1] = cocaine_isShown;
+showing[2] = heroin_isShown;
+showing[3] = acid_isShown;
+
+var length = 4;
 
 if(collision_rectangle(x-25, y, x+50, y+50, obj_policeStation, false, false)){
     //check players drug levels and criminal experience. (Street cred)    
     show_debug_message("pressed on the police station");
+    
+    var arrested = false;
+    for(p = 0; p &lt; 4; p++){
+        //if(level[p] &gt; 75 || active[p] == true || street_credit &gt; 25){
+            //arrested
+        //}
+    
+    
+        if(level[p] &gt; 75){
+            show_debug_message("Arrested for drug use");
+        }else if(active[p] == true){
+            show_debug_message("Arrested for under the influence in public");
+        }else if(street_credit &gt; 25){
+            show_debug_message("Arrested for known drug affiliation");
+        }
+    }
 }
 
 if(collision_rectangle(x-25, y, x+50, y+50, obj_hospital, false, false)){
     //check players drug level and decide whether they get help or thrown out. 
     show_debug_message("Pressed on the hospital");
+    
+    var doTreatment = true;
+    
+    //if any of the drugs is above 80, do not continue
+    for(i = 0; i &lt; 4; i++){
+        if(level[i] &gt; 80 || active[i] == true){
+            doTreatment = false;
+        }
+    }
+    
+    if(doTreatment){
+        var treated = false;
+        for(j = 0; j &lt; 4; j++){
+            if(level[j] &lt; 60 &amp;&amp; level[j] &gt; 50 &amp;&amp; showing[j] == true){
+                switch(j){
+                    case 0:
+                        show_debug_message("Cured MaryJ");
+                    case 1: 
+                        cocaine_isShown = false; 
+                        cocaine_level = 50; 
+                        player_dir = 1;  
+                        show_debug_message("Cured cocaine");
+                    case 2:
+                        heroin_isShown = false;
+                        heroin_level = 50;
+                        show_debug_message("Cured heroin");
+                    case 3:
+                        acid_isShown = false;
+                        acid_level = 50;
+                        show_debug_message("Cured acid");
+                }
+                treated = true;
+            }
+        }
+        
+        if(!treated){
+            //so something about how nothing can be cured
+            show_debug_message("Cannot be treated")
+        }
+        
+    }else{
+        //do something about how one of the drugs is too high
+        show_debug_message("Too High on drugs to be treated")
+    }
 }
 
 </string>
