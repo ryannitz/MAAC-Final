@@ -49,6 +49,7 @@
       <sprite>sprites\spr_statContainer</sprite>
       <sprite>sprites\spr_statHealth</sprite>
     </sprites>
+    <sprite>sprites\spr_policeCar</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -91,6 +92,7 @@
       <object>objects\obj_drug_acid</object>
       <object>objects\obj_food</object>
     </objects>
+    <object>objects\obj_policeCar</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_mainRoom</room>
