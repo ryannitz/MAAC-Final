@@ -597,7 +597,7 @@
     <instance objName="obj_food" x="928" y="736" name="inst_188BF1B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_food" x="896" y="736" name="inst_F838B9CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_policeStation" x="768" y="416" name="inst_581CB8FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_policeCar" x="608" y="480" name="inst_98A8E3A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_policeCar" x="832" y="512" name="inst_5A8E420A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

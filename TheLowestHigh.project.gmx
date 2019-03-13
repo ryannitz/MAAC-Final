@@ -52,7 +52,9 @@
     <sprite>sprites\spr_policeCar</sprite>
   </sprites>
   <backgrounds name="background"/>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <fonts name="fonts">
     <font>fonts\font0</font>
   </fonts>
