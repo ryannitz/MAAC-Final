@@ -161,6 +161,28 @@ if(isCollide){
 
 draw_circle(x,y-8,175,false);
 draw_set_alpha(1);
+
+if(direction == 0){
+    //going right
+    image_index = 0;
+    draw_sprite(spr_policeCar, 0, x, y);
+    
+}else if(direction == 90){
+    //going up
+    image_index = 
+    draw_sprite(spr_policeCar, 0, x, y);
+    
+}else if(direction == 180){
+    //going left
+    image_index = 
+    draw_sprite(spr_policeCar, 0, x, y);
+    
+}else if(direction == 270){
+    //going down
+    image_index = 
+    draw_sprite(spr_policeCar, 0, x, y);
+}
+
 draw_sprite(spr_policeCar, 0, x, y);
 </string>
           </argument>

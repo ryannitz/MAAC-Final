@@ -50,6 +50,7 @@
       <sprite>sprites\spr_statHealth</sprite>
     </sprites>
     <sprite>sprites\spr_policeCar</sprite>
+    <sprite>sprites\spr_policeCarVer</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
