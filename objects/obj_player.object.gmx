@@ -883,6 +883,10 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
             <string>health_decreaser = 0;
 drug_decreaser = .25;
 
+if(player_health &lt; 0){
+    game_end();
+}
+
 if(player_hunger &lt; 50){
     //drug_decreaser = 1.1;
 }else if(player_hunger &lt; 25){
@@ -912,6 +916,7 @@ if(level &gt;= 100){
 level = heroin_level;
 if(level &gt;= 100){
     //death 
+    game_end();
 }else if(level &gt; 75){
     health_decreaser += .10;
 }else if(level &gt; 60){
@@ -925,6 +930,7 @@ if(level &gt;= 100){
 level = acid_level;
 if(level &gt;= 100){
     //death 
+    game_end();
 }else if(level &gt; 75){
     health_decreaser += .5;
 }else if(level &gt; 60){
