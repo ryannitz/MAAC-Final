@@ -59,6 +59,7 @@
       <sprite>sprites\spr_play</sprite>
       <sprite>sprites\spr_credits</sprite>
       <sprite>sprites\spr_exit</sprite>
+      <sprite>sprites\spr_gameTitle</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -110,6 +111,7 @@
       <object>objects\obj_selectGame</object>
       <object>objects\obj_selectExit</object>
       <object>objects\obj_menuController</object>
+      <object>objects\obj_gameTitle</object>
     </objects>
     <objects name="environment">
       <object>objects\obj_main_TopWall</object>
