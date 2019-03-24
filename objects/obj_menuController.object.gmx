@@ -53,13 +53,13 @@
             <kind>1</kind>
             <string>switch(menu_index){
     case 0:
-        show_debug_message("Going to game stage");
-        room_goto(room_mainRoom);
+        show_debug_message("Going to Game Room");
+        room_goto(room_game);
         break;
     case 1:
         //change this to be credit room
-        show_debug_message("Going to game stage");
-        room_goto(room_menu);
+        show_debug_message("Going to Credits Room");
+        room_goto(room_credits);
         break;
     case 2:
         show_debug_message("Exiting");

@@ -81,7 +81,7 @@ obj_selectExit.image_index = 0;
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>room_mainRoom</room>
+            <room>room_game</room>
           </argument>
         </arguments>
       </action>

@@ -129,7 +129,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
-    <room>rooms\room_mainRoom</room>
+    <room>rooms\room_game</room>
+    <room>rooms\room_credits</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
