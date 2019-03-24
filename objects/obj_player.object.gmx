@@ -3,7 +3,7 @@
   <spriteName>spr_playerFB</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -1635,7 +1635,7 @@ if(!(player_speed &lt;= 1)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Do the laced with cocaine part here</string>
+            <string>Has the potential to be laced with cocaine</string>
           </argument>
         </arguments>
       </action>
@@ -1655,7 +1655,7 @@ if(!(player_speed &lt;= 1)){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>120</string>
+            <string>10</string>
           </argument>
         </arguments>
       </action>

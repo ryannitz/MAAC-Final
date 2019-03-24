@@ -50,6 +50,9 @@
     <sprites name="environment">
       <sprite>sprites\spr_main_grass</sprite>
       <sprite>sprites\spr_main_TopWall</sprite>
+      <sprite>sprites\spr_leftWall</sprite>
+      <sprite>sprites\spr_rightWalll</sprite>
+      <sprite>sprites\spr_bottomWall</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_policeCar</sprite>
@@ -115,6 +118,9 @@
     </objects>
     <objects name="environment">
       <object>objects\obj_main_TopWall</object>
+      <object>objects\obj_leftWall</object>
+      <object>objects\obj_rightWall</object>
+      <object>objects\obj_bottomWall</object>
     </objects>
     <objects name="NPC">
       <object>objects\obj_policeCar</object>
