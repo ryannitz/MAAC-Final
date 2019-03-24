@@ -84,17 +84,17 @@ if(collision_circle(x, y-8, 175, obj, false, false)){
     var arrested = false;
     
     for(p = 0; p &lt; 4; p++){
-        //if(level[p] &gt; 75 || active[p] == true || street_credit &gt; 25){
-            //arrested
-        //}
-    
-    
         if(level[p] &gt; 75){
             show_debug_message("Arrested for drug use");
-        }else if(active[p] == true){
+            break;
+        }
+        if(active[p] == true){
             show_debug_message("Arrested for under the influence in public");
-        }else if(obj.street_credit &gt; 25){
+            break;
+        }
+        if(obj.street_credit &gt; 25){
             show_debug_message("Arrested for known drug affiliation");
+            break;
         }
     }
     
