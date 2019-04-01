@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\ms_creditsSoundtrack</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="player">
       <sprite>sprites\spr_playerFB</sprite>
@@ -126,6 +128,7 @@
       <object>objects\obj_policeCar</object>
       <object>objects\obj_policeCar2</object>
     </objects>
+    <object>objects\object38</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
