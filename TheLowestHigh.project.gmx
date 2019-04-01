@@ -67,6 +67,9 @@
       <sprite>sprites\spr_exit</sprite>
       <sprite>sprites\spr_gameTitle</sprite>
     </sprites>
+    <sprites name="gameEndRoom">
+      <sprite>sprites\spr_backToMenu</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_menu</background>
@@ -133,7 +136,7 @@
       <object>objects\obj_creditsController</object>
     </objects>
     <objects name="gameEndRoom">
-      <object>objects\obj_endController</object>
+      <object>objects\obj_backToMenu</object>
     </objects>
   </objects>
   <rooms name="rooms">
