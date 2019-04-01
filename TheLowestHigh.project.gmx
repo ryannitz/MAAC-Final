@@ -129,14 +129,20 @@
       <object>objects\obj_policeCar</object>
       <object>objects\obj_policeCar2</object>
     </objects>
-    <objects name="Credits">
+    <objects name="creditsRoom">
       <object>objects\obj_creditsController</object>
+    </objects>
+    <objects name="gameEndRoom">
+      <object>objects\obj_endController</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\room_game</room>
     <room>rooms\room_credits</room>
+    <room>rooms\room_arrested</room>
+    <room>rooms\room_died</room>
+    <room>rooms\room_overdosed</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

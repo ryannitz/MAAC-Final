@@ -817,15 +817,10 @@ colide = false;
 
 obj = obj_policeStation;
 if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
-    //highlight the building 
-    //obj_policeStationTop.image_index = 2
-    //obj_policeStationTop.sprite_index = spr_policeStationSPLIT;
     obj.image_index = 1;
     obj.sprite_index = spr_policeStation;
     
 }else{
-    //obj_policeStationTop.image_index = 0
-    //obj_policeStationTop.sprite_index = spr_policeStationSPLIT;
     obj.image_index = 0;
     obj.sprite_index = spr_policeStation;
 } 
@@ -884,7 +879,7 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
 drug_decreaser = .25;
 
 if(player_health &lt; 0){
-    game_end();
+    room_goto(room_died);
 }
 
 if(player_hunger &lt; 50){
@@ -904,7 +899,7 @@ if(level &gt; 90){
 
 level = cocaine_level;
 if(level &gt;= 100){
-    //death 
+    room_goto(room_overdosed);
 }else if(level &gt; 75){
     health_decreaser += .5;
 }else if(level &gt; 60){
@@ -915,8 +910,7 @@ if(level &gt;= 100){
 
 level = heroin_level;
 if(level &gt;= 100){
-    //death 
-    game_end();
+    room_goto(room_overdosed);
 }else if(level &gt; 75){
     health_decreaser += .10;
 }else if(level &gt; 60){
@@ -929,8 +923,7 @@ if(level &gt;= 100){
 
 level = acid_level;
 if(level &gt;= 100){
-    //death 
-    game_end();
+    room_goto(room_overdosed);
 }else if(level &gt; 75){
     health_decreaser += .5;
 }else if(level &gt; 60){
