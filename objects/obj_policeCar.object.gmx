@@ -91,10 +91,16 @@ if(collision_circle(x, y-8, 175, obj, false, false)){
     
         if(level[p] &gt; 75){
             show_debug_message("Arrested for drug use");
+            room_goto(room_arrested);
+            break;
         }else if(active[p] == true){
             show_debug_message("Arrested for under the influence in public");
+            room_goto(room_arrested);
+            break;
         }else if(obj.street_credit &gt; 25){
             show_debug_message("Arrested for known drug affiliation");
+            room_goto(room_arrested);
+            break;
         }
     }
     

@@ -2204,10 +2204,13 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj_policeStation, false, false)){
     
         if(level[p] &gt; 75){
             show_debug_message("Arrested for drug use");
+            room_goto(room_arrested);
         }else if(active[p] == true){
             show_debug_message("Arrested for under the influence in public");
+            room_goto(room_arrested);
         }else if(street_credit &gt; 25){
             show_debug_message("Arrested for known drug affiliation");
+            room_goto(room_arrested);
         }
     }
 }
