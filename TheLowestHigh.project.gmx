@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\ms_creditsSoundtrack</sound>
+    <sound>sound\ms_menuTick</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
@@ -128,7 +129,9 @@
       <object>objects\obj_policeCar</object>
       <object>objects\obj_policeCar2</object>
     </objects>
-    <object>objects\object38</object>
+    <objects name="Credits">
+      <object>objects\obj_creditsController</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
