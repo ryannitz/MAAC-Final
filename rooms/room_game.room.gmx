@@ -624,6 +624,11 @@
     <instance objName="obj_rightWall" x="1888" y="1056" name="inst_A6DC9E09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bottomWall" x="0" y="1056" name="inst_91769268" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bottomWall" x="1056" y="1056" name="inst_5019D541" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_heroin" x="864" y="896" name="inst_0D85B98C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_heroin" x="832" y="896" name="inst_01BB1E59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_heroin" x="800" y="896" name="inst_AB093FFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_heroin" x="768" y="896" name="inst_AFFECEEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_heroin" x="736" y="896" name="inst_46BD8D28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

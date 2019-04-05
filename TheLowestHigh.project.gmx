@@ -73,6 +73,8 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_menu</background>
+    <background>background\bg_overdoseScreen</background>
+    <background>background\bg_arrested</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
