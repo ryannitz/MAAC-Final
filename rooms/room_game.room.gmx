@@ -59,6 +59,7 @@
     <instance objName="obj_main_TopWall" x="576" y="0" name="inst_7383B902" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_TopWall" x="672" y="0" name="inst_9B8824D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_TopWall" x="768" y="0" name="inst_C57B0D2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="1312" y="896" name="inst_0E077310" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_TopWall" x="864" y="0" name="inst_8439D121" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_TopWall" x="960" y="0" name="inst_8369ED28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_TopWall" x="1056" y="0" name="inst_AF6A588B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -482,7 +483,6 @@
     <instance objName="obj_main_roadTR" x="1536" y="192" name="inst_B1601F85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_lotPark" x="1280" y="320" name="inst_52B443BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_lotPlayerHouse" x="1344" y="800" name="inst_8A1D38D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="1312" y="896" name="inst_0E077310" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_sidewalkInner" x="768" y="384" name="inst_AD69C402" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_sidewalkInner" x="768" y="352" name="inst_06CFA094" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main_sidewalkInner" x="768" y="320" name="inst_7601F028" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -629,6 +629,16 @@
     <instance objName="obj_drug_heroin" x="800" y="896" name="inst_AB093FFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_drug_heroin" x="768" y="896" name="inst_AFFECEEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_drug_heroin" x="736" y="896" name="inst_46BD8D28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickupGenerator" x="1344" y="768" name="inst_B794EB43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickupGenerator" x="1376" y="768" name="inst_E5E855B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickupGenerator" x="1408" y="768" name="inst_22B648F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickupGenerator" x="1440" y="768" name="inst_C9A4B3CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pickupGenerator" x="1472" y="768" name="inst_67CD16F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_maryJ" x="1344" y="768" name="inst_A5AC229B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_cocaine" x="1376" y="768" name="inst_2E95BEAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_heroin" x="1408" y="768" name="inst_A4DDAD3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_drug_acid" x="1440" y="768" name="inst_36D03E41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_food" x="1472" y="768" name="inst_B16332EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
