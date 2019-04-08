@@ -2200,8 +2200,7 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj_policeStation, false, false)){
         //if(level[p] &gt; 75 || active[p] == true || street_credit &gt; 25){
             //arrested
         //}
-    
-    
+
         if(level[p] &gt; 75){
             show_debug_message("Arrested for drug use");
             room_goto(room_arrested);
@@ -2250,17 +2249,21 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj_hospital, false, false)){
                         show_debug_message("Cured acid");
                 }
                 treated = true;
+                audio_play_sound(snd_success, 10, false)
             }
         }
         
         if(!treated){
             //so something about how nothing can be cured
             show_debug_message("Cannot be treated")
+            audio_play_sound(snd_failed, 10, false)
+            
         }
         
     }else{
         //do something about how one of the drugs is too high
         show_debug_message("Too High on drugs to be treated")
+        audio_play_sound(snd_failed, 10, false);
     }
 }
 

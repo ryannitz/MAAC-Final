@@ -7,6 +7,9 @@
   <sounds name="sound">
     <sound>sound\ms_creditsSoundtrack</sound>
     <sound>sound\ms_menuTick</sound>
+    <sound>sound\snd_pickup</sound>
+    <sound>sound\snd_success</sound>
+    <sound>sound\snd_failed</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="player">
