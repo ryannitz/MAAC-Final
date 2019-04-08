@@ -52,6 +52,7 @@
     <sprites name="gui">
       <sprite>sprites\spr_statContainer</sprite>
       <sprite>sprites\spr_statHealth</sprite>
+      <sprite>sprites\spr_hospitalText</sprite>
     </sprites>
     <sprites name="environment">
       <sprite>sprites\spr_main_grass</sprite>

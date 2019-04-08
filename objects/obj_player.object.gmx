@@ -51,6 +51,8 @@ health_decreaser = 0.00; //Will be x/100 and this decrease will happen every fra
 player_hunger = 75.00; //is defined in begin step as well as it launches first
 hunger_decrease = 1.00;
 street_credit = 0; // you will die anyway by the drug lord
+tooHigh = false;
+cantBeTreated = false;
 
 //movement
 player_speed = 4;
@@ -164,6 +166,58 @@ acid_level = 50;
           <argument>
             <kind>4</kind>
             <string>4</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>tooHigh</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>false</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>cantBeTreated</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>false</string>
           </argument>
         </arguments>
       </action>
@@ -1915,6 +1969,26 @@ if(keyboard_check(ord('D')) || keyboard_check(vk_right)){
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Player stats</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -2154,6 +2228,61 @@ if(acid_isShown){
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Error messages</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Messages
+
+//Hospital
+if(tooHigh){
+    var x1 = (view_wport[0]/2) - (sprite_get_width(spr_hospitalText)/4)
+    show_debug_message(view_wport[0]/2);
+    image_speed = 0;
+    draw_sprite_ext(spr_hospitalText, 0, x1, 0, 1/2, 1/2, 0, c_white, 1);
+}
+if(cantBeTreated){
+    var x1 = (view_wport[0]/2) - (sprite_get_width(spr_hospitalText)/4)
+    show_debug_message(view_wport[0]/2);
+    image_speed = 0;
+    draw_sprite_ext(spr_hospitalText, 1, x1, 0, 1/2, 1/2, 0, c_white, 1);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="9" enumb="32">
       <action>
@@ -2257,6 +2386,10 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj_hospital, false, false)){
             //so something about how nothing can be cured
             show_debug_message("Cannot be treated")
             audio_play_sound(snd_failed, 10, false)
+            alarm[10] = 5 * room_speed;
+            cantBeTreated = true;
+            tooHigh = false;
+            
             
         }
         
@@ -2264,6 +2397,9 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj_hospital, false, false)){
         //do something about how one of the drugs is too high
         show_debug_message("Too High on drugs to be treated")
         audio_play_sound(snd_failed, 10, false);
+        alarm[11] = 5 * room_speed;
+        tooHigh = true;
+        cantBeTreated = false;
     }
 }
 
