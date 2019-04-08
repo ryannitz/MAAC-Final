@@ -53,6 +53,7 @@
       <sprite>sprites\spr_statContainer</sprite>
       <sprite>sprites\spr_statHealth</sprite>
       <sprite>sprites\spr_hospitalText</sprite>
+      <sprite>sprites\spr_pressSpaceBar</sprite>
     </sprites>
     <sprites name="environment">
       <sprite>sprites\spr_main_grass</sprite>
@@ -144,6 +145,7 @@
     <objects name="gameEndRoom">
       <object>objects\obj_backToMenu</object>
     </objects>
+    <object>objects\obj_buildingTutorial</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>

@@ -58,6 +58,10 @@ cantBeTreated = false;
 player_speed = 4;
 player_dir = 1;
 
+//tutorial
+buildingTutorialComplete = false;
+triggerBuildingTutorial = true;
+
 //drugs
 pickup_multiplier = 5;
 drug_decreaser = 1.0;
@@ -882,11 +886,22 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
 //hospital
 obj = obj_hospital;
 if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
+    if(triggerBuildingTutorial &amp;&amp; !buildingTutorialComplete){
+        var x1 = obj.x + sprite_get_width(spr_hospital)/2 - (sprite_get_width(spr_pressSpaceBar)/2)
+        var y1 = obj.y + sprite_get_height(spr_hospital)/2 - (sprite_get_height(spr_pressSpaceBar)/2)
+        instance_create(x1, y1, obj_buildingTutorial);
+        triggerBuildingTutorial = false;
+    }
+    
     obj.image_index = 1;
     obj.sprite_index = spr_hospital;
 }else{
     obj.image_index = 0;
     obj.sprite_index = spr_hospital;
+    
+    if(triggerBuildingTutorial = false){
+        triggerBuildingTutorial = true;
+    }
 } 
 
 </string>
@@ -2269,14 +2284,12 @@ if(acid_isShown){
 //Hospital
 if(tooHigh){
     var x1 = (view_wport[0]/2) - (sprite_get_width(spr_hospitalText)/4)
-    show_debug_message(view_wport[0]/2);
-    image_speed = 0;
+    spr_hospitalText.image_speed = 0;
     draw_sprite_ext(spr_hospitalText, 0, x1, 0, 1/2, 1/2, 0, c_white, 1);
 }
 if(cantBeTreated){
     var x1 = (view_wport[0]/2) - (sprite_get_width(spr_hospitalText)/4)
-    show_debug_message(view_wport[0]/2);
-    image_speed = 0;
+    spr_hospitalText.image_speed = 0;
     draw_sprite_ext(spr_hospitalText, 1, x1, 0, 1/2, 1/2, 0, c_white, 1);
 }
 </string>
@@ -2344,8 +2357,11 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj_policeStation, false, false)){
 }
 
 if(collision_rectangle(x-25, y, x+50, y+50, obj_hospital, false, false)){
-    //check players drug level and decide whether they get help or thrown out. 
-    show_debug_message("Pressed on the hospital");
+    
+    //really needs optimization
+    if(!buildingTutorialComplete){
+        buildingTutorialComplete = true;
+    }
     
     var doTreatment = true;
     
@@ -2385,7 +2401,7 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj_hospital, false, false)){
         if(!treated){
             //so something about how nothing can be cured
             show_debug_message("Cannot be treated")
-            audio_play_sound(snd_failed, 10, false)
+            audio_play_sound(snd_failed, 0, false)
             alarm[10] = 5 * room_speed;
             cantBeTreated = true;
             tooHigh = false;
@@ -2396,7 +2412,7 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj_hospital, false, false)){
     }else{
         //do something about how one of the drugs is too high
         show_debug_message("Too High on drugs to be treated")
-        audio_play_sound(snd_failed, 10, false);
+        audio_play_sound(snd_failed, 0, false);
         alarm[11] = 5 * room_speed;
         tooHigh = true;
         cantBeTreated = false;
