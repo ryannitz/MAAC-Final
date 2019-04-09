@@ -120,17 +120,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if(collision_circle(x, y, 16, obj_player, false, false)){
+            <string>if(collision_circle(x, y, 16, obj_player, false, false) &amp;&amp; alarm[0] == -1){
     if(firstInstance){
         hasInstance = true;
         firstInstance = false;
-        alarm[0] = 130;
     }else{ 
         hasInstance = false;
-        alarm[0] = 130;
     }
-
+    //either 10 seconds or 1 minutes seconds
+    var alarm_time = room_speed * irandom_range(10,60);
+    alarm[0] = alarm_time;
 }
 
 //if does not have instance 

@@ -2456,12 +2456,10 @@ if(acid_isShown){
 //Hospital
 if(tooHigh){
     var x1 = (view_wport[0]/2) - (sprite_get_width(spr_hospitalText)/4)
-    spr_hospitalText.image_speed = 0;
     draw_sprite_ext(spr_hospitalText, 0, x1, 0, 1/2, 1/2, 0, c_white, 1);
 }
 if(cantBeTreated){
     var x1 = (view_wport[0]/2) - (sprite_get_width(spr_hospitalText)/4)
-    spr_hospitalText.image_speed = 0;
     draw_sprite_ext(spr_hospitalText, 1, x1, 0, 1/2, 1/2, 0, c_white, 1);
 }
 </string>
