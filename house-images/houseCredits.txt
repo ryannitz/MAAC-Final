@@ -11,3 +11,10 @@ house5: PeekyChew @ https://www.deviantart.com/peekychew/art/Twinleaf-Town-Publi
 house6, house7: WesleyFG @ https://www.deviantart.com/wesleyfg/art/House-IV-Gen-Style-i-choose-you-291802971
 
 house8: LotusKing @ https://www.deviantart.com/lotusking/art/Simple-Lab-277877292
+
+environments1 :Zeo254 @ https://www.deviantart.com/zeo254/art/Tileset-by-Zeo-417546645
+
+environments2 : dreamer-aruki @ https://www.deviantart.com/dreamer-aruki/art/Pixel-Wood-and-Trees-340547771
+
+environments3: oni1ink @ https://www.deviantart.com/oni1ink/art/Tutorial-How-to-draw-Foliage-611526711
+

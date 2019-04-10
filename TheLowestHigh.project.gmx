@@ -54,6 +54,8 @@
       <sprite>sprites\spr_house6</sprite>
       <sprite>sprites\spr_house7</sprite>
       <sprite>sprites\spr_house8</sprite>
+      <sprite>sprites\spr_house9</sprite>
+      <sprite>sprites\spr_house10</sprite>
     </sprites>
     <sprites name="gui">
       <sprite>sprites\spr_statContainer</sprite>
@@ -86,6 +88,7 @@
     <background>background\bg_menu</background>
     <background>background\bg_overdoseScreen</background>
     <background>background\bg_arrested</background>
+    <background>background\bg_grass</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -127,6 +130,8 @@
       <object>objects\obj_house6</object>
       <object>objects\obj_house7</object>
       <object>objects\obj_house8</object>
+      <object>objects\obj_house9</object>
+      <object>objects\obj_house10</object>
     </objects>
     <objects name="pickups">
       <object>objects\obj_drug_maryJ</object>
