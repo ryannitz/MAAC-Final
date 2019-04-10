@@ -43,11 +43,17 @@
       <sprite>sprites\spr_main_sidewalkLeft</sprite>
     </sprites>
     <sprites name="Buildings">
-      <sprite>sprites\spr_main_lotPark</sprite>
-      <sprite>sprites\spr_main_lotPlayerHouse</sprite>
       <sprite>sprites\spr_policeStationSPLIT</sprite>
       <sprite>sprites\spr_hospital</sprite>
       <sprite>sprites\spr_policeStation</sprite>
+      <sprite>sprites\spr_house1</sprite>
+      <sprite>sprites\spr_house2</sprite>
+      <sprite>sprites\spr_house3</sprite>
+      <sprite>sprites\spr_house4</sprite>
+      <sprite>sprites\spr_house5</sprite>
+      <sprite>sprites\spr_house6</sprite>
+      <sprite>sprites\spr_house7</sprite>
+      <sprite>sprites\spr_house8</sprite>
     </sprites>
     <sprites name="gui">
       <sprite>sprites\spr_statContainer</sprite>
@@ -108,12 +114,19 @@
       <object>objects\obj_main_roadVer</object>
     </objects>
     <objects name="buildings">
-      <object>objects\obj_main_lotPark</object>
-      <object>objects\obj_main_lotPlayerHouse</object>
       <object>objects\obj_policeStationBot</object>
       <object>objects\obj_policeStationTop</object>
       <object>objects\obj_policeStation</object>
       <object>objects\obj_hospital</object>
+      <object>objects\obj_buildingTutorial</object>
+      <object>objects\obj_house1</object>
+      <object>objects\obj_house2</object>
+      <object>objects\obj_house3</object>
+      <object>objects\obj_house4</object>
+      <object>objects\obj_house5</object>
+      <object>objects\obj_house6</object>
+      <object>objects\obj_house7</object>
+      <object>objects\obj_house8</object>
     </objects>
     <objects name="pickups">
       <object>objects\obj_drug_maryJ</object>
@@ -146,7 +159,6 @@
     <objects name="gameEndRoom">
       <object>objects\obj_backToMenu</object>
     </objects>
-    <object>objects\obj_buildingTutorial</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>

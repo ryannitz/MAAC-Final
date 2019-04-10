@@ -977,6 +977,7 @@ drug_decreaser = .25;
 
 if(player_health &lt; 0){
     room_goto(room_died);
+    draw_set_colour_write_enable(true, true, true, 1);
 }
 
 if(player_hunger &lt; 50){
@@ -997,6 +998,7 @@ if(level &gt; 90){
 level = cocaine_level;
 if(level &gt;= 100){
     room_goto(room_overdosed);
+    draw_set_colour_write_enable(true, true, true, 1);
 }else if(level &gt; 75){
     health_decreaser += .5;
 }else if(level &gt; 60){
@@ -1008,6 +1010,7 @@ if(level &gt;= 100){
 level = heroin_level;
 if(level &gt;= 100){
     room_goto(room_overdosed);
+    draw_set_colour_write_enable(true, true, true, 1);
 }else if(level &gt; 75){
     health_decreaser += .10;
 }else if(level &gt; 60){
@@ -1021,6 +1024,7 @@ if(level &gt;= 100){
 level = acid_level;
 if(level &gt;= 100){
     room_goto(room_overdosed);
+    draw_set_colour_write_enable(true, true, true, 1);
 }else if(level &gt; 75){
     health_decreaser += .5;
 }else if(level &gt; 60){
