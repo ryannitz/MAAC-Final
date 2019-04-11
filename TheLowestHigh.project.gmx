@@ -89,6 +89,7 @@
       <sprite>sprites\spr_credits</sprite>
       <sprite>sprites\spr_exit</sprite>
       <sprite>sprites\spr_gameTitle</sprite>
+      <sprite>sprites\spr_creditsScroller</sprite>
     </sprites>
     <sprites name="gameEndRoom">
       <sprite>sprites\spr_backToMenu</sprite>
@@ -100,6 +101,7 @@
     <background>background\bg_arrested</background>
     <background>background\bg_grass</background>
     <background>background\bg_success</background>
+    <background>background\bg_credits</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -185,6 +187,7 @@
     <objects name="gameEndRoom">
       <object>objects\obj_backToMenu</object>
     </objects>
+    <object>objects\obj_creditsScroller</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>

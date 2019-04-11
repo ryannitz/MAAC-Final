@@ -1,29 +1,51 @@
-https://www.deviantart.com
 
-house1, house2, house3 : ditto209 @ https://www.deviantart.com/ditto209/art/Players-House-552226459
+Coding 
+	All code written by Ryan Nitz with help of 
+	-Game Maker Studio documentation and forums 
+		https://docs.yoyogames.com/source/dadiospice/
+		https://forum.yoyogames.com/index.php
+	-Jeff Mundee 
+Art
+	Building sprites: 
+	ditto209   	@ https://www.deviantart.com/ditto209/art/Players-House-552226459
+	LotusKing 	@ https://www.deviantart.com/lotusking/art/Simple-Lab-277877292
+	MichaKing 	Copyright 2018-2019 MichaKing (Fair use in non-commercial work)
+			        @ https://www.deviantart.com/michaking/art/Tile-Rustic-house-743674605
+	Magiscarf 	@ https://www.deviantart.com/magiscarf/art/Victorian-Variations-698506647
+	PeekyChew 	@ https://www.deviantart.com/peekychew/art/Twinleaf-Town-Public-Tiles-532690188
+	PkmnAlexandrite @ https://www.deviantart.com/pkmnalexandrite/art/Residential-Building-Tiles-742809445
+	PkmnAlexandrite @ https://www.deviantart.com/pkmnalexandrite/art/Laboratory-Tile-739445120
+	WesleyFG 	@ https://www.deviantart.com/wesleyfg/art/House-IV-Gen-Style-i-choose-you-291802971
+	Zeo254 		@ https://www.deviantart.com/zeo254/art/Tileset-by-Zeo-417546645
 
-house4: MichaKing Copyright 2018-2019 MichaKing @ https://www.deviantart.com/michaking/art/Tile-Rustic-house-743674605
+	Environment Sprites:
+	dreamer-aruki 	@ https://www.deviantart.com/dreamer-aruki/art/Pixel-Wood-and-Trees-340547771
+	oni1ink 	         @ https://www.deviantart.com/oni1ink/art/Tutorial-How-to-draw-Foliage-611526711
+	Zeo254 		@ https://www.deviantart.com/zeo254/art/Tileset-by-Zeo-417546645
+	Zeo254 		@ https://www.deviantart.com/zeo254/art/Tiles-Zeo-472442499
 
-Vicotorian Houses: Magiscarf @ https://www.deviantart.com/magiscarf/art/Victorian-Variations-698506647
+	Playground Sprites: 
+	Felicity 	@ https://www.pinterest.ca/pin/405253666464395061/?autologin=true&d=t&mt=login
 
-house5: PeekyChew @ https://www.deviantart.com/peekychew/art/Twinleaf-Town-Public-Tiles-532690188
+	Pickups:
+	Ryan Nitz with Game Maker Studio sprite creator.
 
-house6, house7: WesleyFG @ https://www.deviantart.com/wesleyfg/art/House-IV-Gen-Style-i-choose-you-291802971
 
-house8: LotusKing @ https://www.deviantart.com/lotusking/art/Simple-Lab-277877292
+Sound Effects
+	Tick menu sound:DeepFrozenApps @ http://soundbible.com/2044-Tick.html
+	pickup sound:	Leszek_Szary @ https://freesound.org/people/Leszek_Szary/sounds/146727/
+	success sound: 	GabrielAraujo @ https://freesound.org/people/GabrielAraujo/sounds/242501/
+	failed sound: 	GameAudio @ https://freesound.org/people/GameAudio/sounds/220210/	
 
-house10: PkmnAlexandrite @ https://www.deviantart.com/pkmnalexandrite/art/Residential-Building-Tiles-742809445
+	
+Music:
+	Background Music: 	Magntron @ https://freesound.org/people/Magntron/sounds/335571/
+	Credits Music: 		Ryan Nitz using noteflight @ https://www.noteflight.com/
 
-bakery: PkmnAlexandrite @ https://www.deviantart.com/pkmnalexandrite/art/Bakery-Tile-742029132
+Testers:
+	MAAC 2095 students for testing and feedback.
 
-lab: PkmnAlexandrite @ https://www.deviantart.com/pkmnalexandrite/art/Laboratory-Tile-739445120
+Introduction to Video Games 2095 + 2019/winter
 
-environments1, houses9 :Zeo254 @ https://www.deviantart.com/zeo254/art/Tileset-by-Zeo-417546645
 
-environments2 : dreamer-aruki @ https://www.deviantart.com/dreamer-aruki/art/Pixel-Wood-and-Trees-340547771
-
-environments3: oni1ink @ https://www.deviantart.com/oni1ink/art/Tutorial-How-to-draw-Foliage-611526711
-
-environments4: Zeo254 @ https://www.deviantart.com/zeo254/art/Tiles-Zeo-472442499
-
-playground: Felicity @ https://www.pinterest.ca/pin/405253666464395061/?autologin=true&d=t&mt=login
+Inspired by D.A.R.E ‘D.A.R.E.-ing’ Students to Avoid Drugs and Alcohol
