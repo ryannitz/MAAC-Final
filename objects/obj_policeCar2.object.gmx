@@ -131,11 +131,17 @@ if(collision_circle(x, y-8, 175, obj, false, false)){
             <kind>1</kind>
             <string>draw_set_alpha(0.5);
 
-if(isCollide){
-   draw_set_colour(c_yellow);
+if(obj_player.tooHigh || 
+    (obj_player.cocaine_level &gt; 75 || obj_player.heroin_level &gt; 75 || obj_player.acid_level &gt; 75) ||
+        (obj_player.cocaine_isActive || obj_player.heroin_isActive || obj_player.acid_isActive)){
+        draw_set_color(c_yellow)
+        if(isCollide){
+            draw_set_color(c_red);
+        }
 }else{
-    draw_set_color(c_red);
+    draw_set_color(c_white);
 }
+
 
 draw_circle(x,y-8,175,false);
 draw_set_alpha(1);

@@ -69,6 +69,8 @@
       <sprite>sprites\spr_leftWall</sprite>
       <sprite>sprites\spr_rightWalll</sprite>
       <sprite>sprites\spr_bottomWall</sprite>
+      <sprite>sprites\spr_bushes</sprite>
+      <sprite>sprites\spr_trees1</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_policeCar</sprite>
@@ -89,6 +91,7 @@
     <background>background\bg_overdoseScreen</background>
     <background>background\bg_arrested</background>
     <background>background\bg_grass</background>
+    <background>background\bg_success</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -153,6 +156,8 @@
       <object>objects\obj_leftWall</object>
       <object>objects\obj_rightWall</object>
       <object>objects\obj_bottomWall</object>
+      <object>objects\obj_bushes</object>
+      <object>objects\obj_trees1</object>
     </objects>
     <objects name="NPC">
       <object>objects\obj_policeCar</object>
@@ -172,6 +177,7 @@
     <room>rooms\room_arrested</room>
     <room>rooms\room_died</room>
     <room>rooms\room_overdosed</room>
+    <room>rooms\room_success</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

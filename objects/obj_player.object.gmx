@@ -776,6 +776,34 @@ with(obj_drug_){
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[6] = 120;
+if(alarm[6] &lt;= 0 ){
+    if(!(maryJ_isShown &amp;&amp; cocaine_isShown &amp;&amp; heroin_isShown &amp;&amp; acid_isShown)){
+        room_goto(room_success);
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -975,8 +1003,8 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj, false, false)){
             <string>health_decreaser = 0;
 drug_decreaser = .25;
 
-if(player_health &lt; 0){
-    room_goto(room_died);
+if(player_health &lt;= 0){
+    room_goto(room_menu);
     draw_set_colour_write_enable(true, true, true, 1);
 }
 
@@ -989,10 +1017,13 @@ if(player_hunger &lt; 50){
 
 //maryJ
 var level = maryJ_level;
+
 if(level &gt; 90){
     health_decreaser += .5;
 }else if(level &lt; 20){
     health_decreaser += .5;
+}else if(level &lt; 0){
+    maryJ_level = 0;
 }
 
 level = cocaine_level;
@@ -1005,6 +1036,8 @@ if(level &gt;= 100){
     health_decreaser += .2;    
 }else if(level &lt; 30){
     health_decreaser += .5;
+}else if(level &lt; 0){
+    cocaine_level = 0;
 }
 
 level = heroin_level;
@@ -1019,6 +1052,8 @@ if(level &gt;= 100){
     health_decreaser += .4;
 }else if(level &lt; 20){
     health_decreaser += .10;
+}else if(level &lt; 0){
+    heroin_level = 0;
 }
 
 level = acid_level;
@@ -1033,6 +1068,8 @@ if(level &gt;= 100){
     health_decreaser += .3;
 }else if(level &lt; 20){
     health_decreaser += .5;
+}else if(level &lt; 0){
+    acid_level = 0;
 }
 
 </string>
@@ -1893,7 +1930,7 @@ if(!(player_speed &lt;= 1)){
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>10</string>
+            <string>3</string>
           </argument>
         </arguments>
       </action>
@@ -2552,6 +2589,9 @@ if(collision_rectangle(x-25, y, x+50, y+50, obj_hospital, false, false)){
             if(level[j] &lt; 60 &amp;&amp; level[j] &gt; 50 &amp;&amp; showing[j] == true){
                 switch(j){
                     case 0:
+                        maryJ_isShown = false; 
+                        maryJ_level = 50; 
+                        player_dir = 1;  
                         show_debug_message("Cured MaryJ");
                     case 1: 
                         cocaine_isShown = false; 

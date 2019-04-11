@@ -1,0 +1,9 @@
+GMS TODO
+
+Add backround music
+Add environment features like trees etc.
+Add credits to credit screen
+
+Optional:
+Add playground
+Add school
