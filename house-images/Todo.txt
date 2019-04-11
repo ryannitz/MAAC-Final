@@ -1,8 +1,11 @@
 GMS TODO
 
 Add backround music
-Add environment features like trees etc.
 Add credits to credit screen
+add drug spawners
+fix tree solidity and zindex
+fix bush size and zindex
+
 
 Optional:
 Add playground

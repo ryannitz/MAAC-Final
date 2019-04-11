@@ -71,6 +71,10 @@
       <sprite>sprites\spr_bottomWall</sprite>
       <sprite>sprites\spr_bushes</sprite>
       <sprite>sprites\spr_trees1</sprite>
+      <sprite>sprites\spr_slide</sprite>
+      <sprite>sprites\spr_toter</sprite>
+      <sprite>sprites\spr_swing</sprite>
+      <sprite>sprites\spr_spinThing</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_policeCar</sprite>
@@ -158,6 +162,10 @@
       <object>objects\obj_bottomWall</object>
       <object>objects\obj_bushes</object>
       <object>objects\obj_trees1</object>
+      <object>objects\obj_slide</object>
+      <object>objects\obj_toter</object>
+      <object>objects\obj_swing</object>
+      <object>objects\obj_spinThing</object>
     </objects>
     <objects name="NPC">
       <object>objects\obj_policeCar</object>
