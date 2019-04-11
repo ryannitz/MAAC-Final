@@ -56,6 +56,9 @@
       <sprite>sprites\spr_house8</sprite>
       <sprite>sprites\spr_house9</sprite>
       <sprite>sprites\spr_house10</sprite>
+      <sprite>sprites\spr_house11</sprite>
+      <sprite>sprites\spr_lab</sprite>
+      <sprite>sprites\spr_house12</sprite>
     </sprites>
     <sprites name="gui">
       <sprite>sprites\spr_statContainer</sprite>
@@ -75,6 +78,7 @@
       <sprite>sprites\spr_toter</sprite>
       <sprite>sprites\spr_swing</sprite>
       <sprite>sprites\spr_spinThing</sprite>
+      <sprite>sprites\spr_grassKnowles</sprite>
     </sprites>
     <sprites name="NPC">
       <sprite>sprites\spr_policeCar</sprite>
@@ -139,6 +143,9 @@
       <object>objects\obj_house8</object>
       <object>objects\obj_house9</object>
       <object>objects\obj_house10</object>
+      <object>objects\obj_house11</object>
+      <object>objects\obj_lab</object>
+      <object>objects\obj_house12</object>
     </objects>
     <objects name="pickups">
       <object>objects\obj_drug_maryJ</object>
@@ -166,6 +173,7 @@
       <object>objects\obj_toter</object>
       <object>objects\obj_swing</object>
       <object>objects\obj_spinThing</object>
+      <object>objects\obj_grassKnowles</object>
     </objects>
     <objects name="NPC">
       <object>objects\obj_policeCar</object>

@@ -12,11 +12,18 @@ house6, house7: WesleyFG @ https://www.deviantart.com/wesleyfg/art/House-IV-Gen-
 
 house8: LotusKing @ https://www.deviantart.com/lotusking/art/Simple-Lab-277877292
 
+house10: PkmnAlexandrite @ https://www.deviantart.com/pkmnalexandrite/art/Residential-Building-Tiles-742809445
+
+bakery: PkmnAlexandrite @ https://www.deviantart.com/pkmnalexandrite/art/Bakery-Tile-742029132
+
+lab: PkmnAlexandrite @ https://www.deviantart.com/pkmnalexandrite/art/Laboratory-Tile-739445120
+
 environments1, houses9 :Zeo254 @ https://www.deviantart.com/zeo254/art/Tileset-by-Zeo-417546645
 
 environments2 : dreamer-aruki @ https://www.deviantart.com/dreamer-aruki/art/Pixel-Wood-and-Trees-340547771
 
 environments3: oni1ink @ https://www.deviantart.com/oni1ink/art/Tutorial-How-to-draw-Foliage-611526711
 
-playground: Felicity @ https://www.pinterest.ca/pin/405253666464395061/?autologin=true&d=t&mt=login
+environments4: Zeo254 @ https://www.deviantart.com/zeo254/art/Tiles-Zeo-472442499
 
+playground: Felicity @ https://www.pinterest.ca/pin/405253666464395061/?autologin=true&d=t&mt=login
